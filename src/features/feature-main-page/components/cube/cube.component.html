@@ -1,0 +1,15 @@
+<div class="flex justify-center">
+  <div>
+    <canvas id="my-canvas"></canvas>
+    <div
+      class="title text-center"
+      [ngClass]="{
+      'text-md': cubeSize == 'SM',
+      'text-lg': cubeSize == 'MD',
+      'text-2xl': cubeSize == 'LG',
+    }"
+    >
+      Text
+    </div>
+  </div>
+</div>

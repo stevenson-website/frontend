@@ -1,0 +1,23 @@
+<div class="flex justify-between">
+  <button (click)="goToMainPage()">
+    <img
+      class="w-auto h-20 hover:rounded transform duration-300 hover:scale-110"
+      src="/assets/pictures/logo.png"
+    />
+  </button>
+  <button class="inline-flex" (click)="darkModeToggled()">
+    <mat-icon>sunny_snowing</mat-icon>
+  </button>
+
+  <!-- Shown on medium screens and above -->
+  <div class="hidden md:flex">
+    <ng-container *ngFor="let route of navigationRoutes">
+      <button mat-button (click)="goToPage(route.path)">
+        {{ route.translationName | translate }}
+      </button>
+    </ng-container>
+  </div>
+  <button class="inline-flex" (click)="drawerToggled()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</div>

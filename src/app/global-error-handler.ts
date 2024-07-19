@@ -1,0 +1,13 @@
+import { ErrorHandler, Injectable } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Injectable()
+export class GlobalErrorHandler implements ErrorHandler {
+  constructor(private router: Router) {}
+
+  handleError(error: unknown) {
+    if (this.router.url !== '/error') {
+      this.router.navigate(['error']);
+    }
+  }
+}

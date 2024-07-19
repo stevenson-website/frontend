@@ -1,0 +1,42 @@
+import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
+type Locale = 'en-US' | 'de-DE';
+type Language = 'en' | 'de';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class LocaleService {
+  defaultLanguage: Language = 'de';
+  languages: Language[] = ['en', 'de'];
+
+  defaultLocale: Locale = 'de-DE';
+  locales: Locale[] = ['en-US', 'de-DE'];
+
+  languageToLocale: Record<Language, Locale> = {
+    en: 'en-US',
+    de: 'de-DE',
+  };
+
+  constructor(private translateService: TranslateService) {}
+
+  getLocale(): string {
+    return this.languageToLocale[this.getBrowserLanguageWithFallback()];
+  }
+
+  setLanguage(): void {
+    this.translateService.setDefaultLang(this.defaultLanguage);
+    this.translateService.use(this.getBrowserLanguageWithFallback());
+  }
+
+  private getBrowserLanguageWithFallback(): Language {
+    const browserLang = this.translateService.getBrowserLang();
+
+    if (!browserLang || !this.languages.includes(browserLang as Language)) {
+      return this.defaultLanguage;
+    }
+
+    return browserLang as Language;
+  }
+}
