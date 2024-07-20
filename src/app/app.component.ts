@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavigationRoute } from './models/navigation-route';
+import { DarkModeService } from './services/darkmode.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +11,16 @@ import { NavigationRoute } from './models/navigation-route';
 })
 export class AppComponent {
   title = 'stevenson-website-angular';
-  darkMode = false;
 
   navigationRoutes: NavigationRoute[] = [];
+  darkMode$: BehaviorSubject<boolean>;
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router,
+    private darkModeService: DarkModeService
+  ) {
     this.registerNavigationRoutes();
+    this.darkMode$ = darkModeService.getBehaviorSubject();
   }
 
   registerNavigationRoutes() {
@@ -31,7 +37,7 @@ export class AppComponent {
   }
 
   changeDarkMode() {
-    this.darkMode = !this.darkMode;
+    this.darkModeService.toggleDarkMode();
   }
 
   goToPage(path: string) {

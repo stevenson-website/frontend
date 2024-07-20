@@ -2,8 +2,8 @@
 <div
   class="min-h-screen"
   [ngClass]="{
-      'text-text-light bg-background-white': !darkMode,
-      'text-text-dark bg-background-dark': darkMode,
+      'text-text-light bg-background-white': !(darkMode$|async),
+      'text-text-dark bg-background-dark': darkMode$|async,
     }"
 >
   <app-header

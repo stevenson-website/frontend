@@ -27,6 +27,7 @@ import { MaterialModule } from './modules/material/material.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainPageComponent } from 'src/features/feature-main-page/main-page/main-page.component';
 import { CubeComponent } from 'src/features/feature-main-page/components/cube/cube.component';
+import { DarkModeService } from './services/darkmode.service';
 
 registerLocaleData(localeDE);
 
@@ -80,6 +81,7 @@ function HttpLoaderFactory(httpClient: HttpClient) {
         localeService.setLanguage(),
       multi: true,
     },
+    DarkModeService,
   ],
   bootstrap: [AppComponent],
 })

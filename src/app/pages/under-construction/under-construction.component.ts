@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
+import { DarkModeService } from 'src/app/services/darkmode.service';
 
 @Component({
   selector: 'app-under-construction',
   templateUrl: './under-construction.component.html',
   styleUrls: ['./under-construction.component.css'],
 })
-export class UnderConstructionComponent{
-  constructor( private router: Router ) {}
+export class UnderConstructionComponent {
+  darkMode$: BehaviorSubject<boolean>;
 
-    //TODO remove the following functions as only for testing purposes: 
-    triggerError(): void {
-      throw new Error('This is a custom error!');
-    }
-    routeToPage(){
-      this.router.navigate(['under-construction']);
-    }
+  constructor(private darkModeService: DarkModeService) {
+    this.darkMode$ = darkModeService.getBehaviorSubject();
+  }
 }

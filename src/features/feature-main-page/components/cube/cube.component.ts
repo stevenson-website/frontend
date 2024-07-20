@@ -3,6 +3,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import * as THREE from 'three';
 import gsap from 'gsap';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { DarkModeService } from 'src/app/services/darkmode.service';
+import { BehaviorSubject, Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'cube',
@@ -11,13 +13,25 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 })
 export class CubeComponent implements OnInit {
   @Input() cubeSize: 'SM' | 'MD' | 'LG' = 'MD';
-  @Input() backgroundColor: number = 0x626b7b;
+  @Input() backgroundColor: number = 0xffffff;
 
   cubeEdgeLength: number = 7;
   canvasEdgeLength: number;
   cameraProximity: number;
 
-  constructor() {
+  private readonly destroy$ = new Subject();
+
+  // Three.js vars
+  //TODO
+
+  constructor(private darkModeService: DarkModeService) {
+    darkModeService
+      .getBehaviorSubject()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((darkMode) => {
+        //this.createThreeJsBox('darkMode');
+      });
+
     switch (this.cubeSize) {
       case 'SM':
         this.canvasEdgeLength = 250;
@@ -39,10 +53,10 @@ export class CubeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.createThreeJsBox();
+    this.createThreeJsBox('ngOnInit');
   }
 
-  createThreeJsBox(): void {
+  createThreeJsBox(caller: string): void {
     const scene = new THREE.Scene();
 
     // Cube
@@ -122,6 +136,7 @@ export class CubeComponent implements OnInit {
     });
 
     const loop = () => {
+      console.log(caller);
       controls.update();
       renderer.render(scene, camera);
       window.requestAnimationFrame(loop);
@@ -132,5 +147,10 @@ export class CubeComponent implements OnInit {
     const timeline = gsap.timeline({ defaults: { duration: 3 } });
     timeline.fromTo(mesh.scale, { z: 0, x: 0, y: 0 }, { z: 1, x: 1, y: 1 });
     timeline.fromTo('.title', { opacity: 0 }, { opacity: 1 });
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next(1);
+    this.destroy$.complete();
   }
 }
