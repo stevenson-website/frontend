@@ -31,6 +31,7 @@ import { DarkModeService } from './services/darkmode.service';
 import { SkillsPageComponent } from 'src/features/feature-skills-page/skills-page/skills-page.component';
 import { SkillCardComponent } from 'src/features/feature-skills-page/components/skill-card/skill-card.component';
 import { CertificationBadgeComponent } from 'src/features/feature-skills-page/components/certification-badge/certification-badge.component';
+import { DrawerComponent } from './components/drawer/drawer.component';
 
 registerLocaleData(localeDE);
 
@@ -45,6 +46,7 @@ function HttpLoaderFactory(httpClient: HttpClient) {
     UnderConstructionComponent,
     HeaderComponent,
     FooterComponent,
+    DrawerComponent,
 
     // Components for Main Page
     MainPageComponent,

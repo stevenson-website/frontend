@@ -1,0 +1,11 @@
+<div class="h-full flex flex-col opacity-90 w-64">
+  <ng-container *ngFor="let route of navigationRoutes">
+    <button
+      mat-button
+      class="p-5 hover:bg-primary-main transform duration-500"
+      (click)="goToPage(route.path); drawerToggled()"
+    >
+      {{ route.translationName | translate }}
+    </button>
+  </ng-container>
+</div>

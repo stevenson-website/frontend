@@ -15,17 +15,10 @@
   <div class="flex flex-col flex-grow">
     <mat-drawer-container class="flex-grow">
       <mat-drawer #drawer opened="false" mode="push" position="end">
-        <div class="h-full flex flex-col border-l-4 border-white opacity-90">
-          <ng-container *ngFor="let route of navigationRoutes">
-            <button
-              mat-button
-              class="p-5 hover:bg-primary-main rounded transform duration-300 hover:scale-110"
-              (click)="goToPage(route.path); drawer.toggle()"
-            >
-              {{ route.translationName | translate }}
-            </button>
-          </ng-container>
-        </div>
+        <drawer
+          [navigationRoutes]="navigationRoutes"
+          (drawerEvent)="drawer.toggle()"
+        ></drawer>
       </mat-drawer>
       <mat-drawer-content>
         <router-outlet></router-outlet>
