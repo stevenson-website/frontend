@@ -1,8 +1,8 @@
 <div class="flex justify-between">
   <button (click)="goToMainPage()">
     <img
-      class="w-auto h-20 hover:rounded transform duration-300 hover:scale-110"
-      src="/assets/pictures/logo.png"
+      class="w-auto h-20 transform duration-300 hover:scale-110"
+      src="/assets/pictures/icons/logo.png"
     />
   </button>
   <button class="inline-flex" (click)="darkModeToggled()">
@@ -17,7 +17,14 @@
       </button>
     </ng-container>
   </div>
-  <button class="inline-flex" (click)="drawerToggled()">
-    <mat-icon>menu</mat-icon>
-  </button>
+  <div class="flex justify-center items-center">
+    <img
+      class="cursor-pointer h-6 m-4 transform duration-300"
+      [ngClass]="{
+        rotated: hamburgerMenuTilted
+      }"
+      src="./../../../assets/pictures/icons/hamburger_menu.svg"
+      (click)="drawerToggled()"
+    />
+  </div>
 </div>

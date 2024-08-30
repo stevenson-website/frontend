@@ -1,0 +1,10 @@
+<svg width="70" height="40" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+    <g transform="translate(0 0)">
+      <g>
+        <rect x="0" y="0" width="70" height="10" fill="#EF7384" fill-opacity="1" />
+        <rect x="0" y="15" width="70" height="10" fill="#DABD9E" fill-opacity="1" />
+        <rect x="0" y="30" width="70" height="10" fill="#D1D4DC" fill-opacity="1" />
+      </g>
+    </g>
+  </svg>

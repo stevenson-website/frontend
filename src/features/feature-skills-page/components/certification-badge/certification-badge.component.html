@@ -1,0 +1,30 @@
+<div
+  id="{{ 'container-' + logo }}"
+  class="w-32 flex items-center justify-center"
+  (mouseover)="onHover()"
+  (mouseleave)="onUnhover()"
+>
+  <div class="relative">
+    <img
+      id="{{ 'logo-' + logo }}"
+      class="w-auto h-32 transform duration-300 hover:scale-110 opacity-100"
+      src="{{ logo }}"
+    />
+    <div
+      id="{{ 'title-' + logo }}"
+      class="absolute inset-0 flex items-center justify-center hidden"
+    >
+      <div
+        class="font-bold text-center"
+        [ngClass]="{
+        'text-white':darkMode$|async,
+        'text-background-dark':!(darkMode$|async),
+      }"
+      >
+        <div class="p-2">
+          {{ title }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

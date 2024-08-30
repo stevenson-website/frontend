@@ -19,6 +19,8 @@ export class HeaderComponent implements OnDestroy {
 
   @Input() navigationRoutes: NavigationRoute[] = [];
 
+  @Input() hamburgerMenuTilted = false;
+
   constructor(private router: Router) {}
   ngOnDestroy(): void {
     throw new Error('Method not implemented.');
@@ -34,6 +36,7 @@ export class HeaderComponent implements OnDestroy {
 
   drawerToggled() {
     this.drawerEvent.emit();
+    this.hamburgerMenuTilted = !this.hamburgerMenuTilted;
   }
 
   darkModeToggled() {

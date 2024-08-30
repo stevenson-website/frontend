@@ -76,9 +76,9 @@ export class CubeComponent implements OnInit {
 
     //   Material
     const textureLoader = new THREE.TextureLoader();
-    const catTexture = textureLoader.load('assets/pictures/cat.jpg');
+    const catTexture = textureLoader.load('assets/pictures/cube/cat.jpg');
     const catPicMaterial = new THREE.MeshBasicMaterial({ map: catTexture });
-    const personTexture = textureLoader.load('assets/pictures/person.jpg');
+    const personTexture = textureLoader.load('assets/pictures/cube/person.jpg');
     const personPicMaterial = new THREE.MeshBasicMaterial({
       map: personTexture,
     });

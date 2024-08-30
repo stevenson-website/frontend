@@ -28,6 +28,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainPageComponent } from 'src/features/feature-main-page/main-page/main-page.component';
 import { CubeComponent } from 'src/features/feature-main-page/components/cube/cube.component';
 import { DarkModeService } from './services/darkmode.service';
+import { SkillsPageComponent } from 'src/features/feature-skills-page/skills-page/skills-page.component';
+import { SkillCardComponent } from 'src/features/feature-skills-page/components/skill-card/skill-card.component';
+import { CertificationBadgeComponent } from 'src/features/feature-skills-page/components/certification-badge/certification-badge.component';
 
 registerLocaleData(localeDE);
 
@@ -43,9 +46,14 @@ function HttpLoaderFactory(httpClient: HttpClient) {
     HeaderComponent,
     FooterComponent,
 
-    //Components for Main Page
+    // Components for Main Page
     MainPageComponent,
     CubeComponent,
+
+    // Components for Skills Page
+    SkillsPageComponent,
+    SkillCardComponent,
+    CertificationBadgeComponent,
   ],
   imports: [
     AppRoutingModule,

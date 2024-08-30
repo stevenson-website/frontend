@@ -1,6 +1,6 @@
 .background-picture {
     height: calc(100vh - 90px);
-    background-image: url('/assets/pictures/background.png');
+    background-image: url('/assets/pictures/background/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;

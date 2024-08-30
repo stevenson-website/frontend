@@ -26,6 +26,11 @@ module.exports = {
     fontFamily: {
       sans: ["Arial", "sans-serif", "Times New Roman"],
     },
+    extend: {
+      backgroundImage: (theme) => ({
+        "bg-stripes": "url('./assets/pictures/background/background.svg')",
+      }),
+    },
   },
   plugins: [],
 };

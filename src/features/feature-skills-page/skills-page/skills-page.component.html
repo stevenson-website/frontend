@@ -1,0 +1,60 @@
+<div class="grid grid-cols-2 gap-4 justify-items-center">
+  <skill-card
+    [title]="'Frontend'"
+    [titleIcon]="'devices'"
+    [skillList]="['skill1', 'skill2', 'skill3']"
+  ></skill-card>
+  <skill-card
+    [title]="'Backend'"
+    [titleIcon]="'code'"
+    [skillList]="['skill1', 'skill2', 'skill3']"
+  ></skill-card>
+  <skill-card
+    [title]="'Infrastructure'"
+    [titleIcon]="'settings_suggest'"
+    [skillList]="['skill1', 'skill2', 'skill3']"
+  ></skill-card>
+  <skill-card
+    [title]="'Legal Specialization'"
+    [titleIcon]="'gavel'"
+    [skillList]="['skill1', 'skill2', 'skill3']"
+  ></skill-card>
+</div>
+
+<div class="my-20">
+  Certifications
+
+  <div class="flex justify-evenly">
+    <certification-badge
+      [logo]="'/assets/pictures/about-me/certs/cert_cloud_dev.png'"
+      [title]="'Google Cloud Professional Cloud Developer'"
+    />
+    <certification-badge
+      [logo]="'/assets/pictures/about-me/certs/cert_database_eng.png'"
+      [title]="'Google Cloud Professional Database Engineer'"
+    />
+    <certification-badge
+      [logo]="'/assets/pictures/about-me/certs/cert_terraform.png'"
+      [title]="'Terraform Associate (003)'"
+    />
+    <certification-badge
+      [logo]="'/assets/pictures/about-me/certs/cert_cipp.png'"
+      [title]="'Certified International Privacy Professional Europe (CIPP/E)'"
+    />
+  </div>
+
+  <div class="my-20">
+    Education
+
+    <img
+      *ngIf="darkMode$ | async"
+      class="w-auto h-32 transform duration-300 hover:scale-105"
+      src="/assets/pictures/about-me/education/university_logo_white.png"
+    />
+    <img
+      *ngIf="!(darkMode$ | async)"
+      class="w-auto h-32 transform duration-300 hover:scale-105"
+      src="/assets/pictures/about-me/education/university_logo_color.png"
+    />
+  </div>
+</div>

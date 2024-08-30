@@ -1,6 +1,6 @@
 <!-- Use the following to define colors for dark and light mode-->
 <div
-  class="min-h-screen"
+  class="min-h-screen bg-fixed bg-bg-stripes"
   [ngClass]="{
       'text-text-light bg-background-white': !(darkMode$|async),
       'text-text-dark bg-background-dark': darkMode$|async,
@@ -8,6 +8,7 @@
 >
   <app-header
     [navigationRoutes]="navigationRoutes"
+    [hamburgerMenuTilted]="drawer.opened"
     (drawerEvent)="drawer.toggle()"
     (darkModeEvent)="changeDarkMode()"
   ></app-header>
