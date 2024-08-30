@@ -18,13 +18,14 @@
     </ng-container>
   </div>
   <div class="flex justify-center items-center">
-    <img
-      class="cursor-pointer h-6 m-4 transform duration-300"
-      [ngClass]="{
-        rotated: hamburgerMenuTilted
-      }"
-      src="./../../../assets/pictures/icons/hamburger_menu.svg"
-      (click)="drawerToggled()"
-    />
+    <button (click)="drawerToggled()">
+      <img
+        class="cursor-pointer h-6 m-4 transform duration-300"
+        [ngClass]="{
+          rotated: hamburgerMenuTilted
+        }"
+        src="./../../../assets/pictures/icons/hamburger_menu.svg"
+      />
+    </button>
   </div>
 </div>
