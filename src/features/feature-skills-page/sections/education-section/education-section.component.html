@@ -1,0 +1,18 @@
+<button (click)="scrollUp()">
+  <navigation-arrow [color]="'second'" [direction]="'up'"></navigation-arrow>
+</button>
+
+<div class="my-20">
+  Education
+
+  <img
+    *ngIf="darkMode$ | async"
+    class="w-auto h-32 transform duration-300 hover:scale-105"
+    src="/assets/pictures/about-me/education/university_logo_white.png"
+  />
+  <img
+    *ngIf="!(darkMode$ | async)"
+    class="w-auto h-32 transform duration-300 hover:scale-105"
+    src="/assets/pictures/about-me/education/university_logo_color.png"
+  />
+</div>

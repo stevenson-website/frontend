@@ -32,6 +32,10 @@ import { SkillsPageComponent } from 'src/features/feature-skills-page/skills-pag
 import { SkillCardComponent } from 'src/features/feature-skills-page/components/skill-card/skill-card.component';
 import { CertificationBadgeComponent } from 'src/features/feature-skills-page/components/certification-badge/certification-badge.component';
 import { DrawerComponent } from './components/drawer/drawer.component';
+import { CertificateSectionComponent } from 'src/features/feature-skills-page/sections/certificate-section/certificate-section.component';
+import { EducationSectionComponent } from 'src/features/feature-skills-page/sections/education-section/education-section.component';
+import { SkillSectionComponent } from 'src/features/feature-skills-page/sections/skill-section/skill-section.component';
+import { NavigationArrowComponent } from 'src/shared/components/navigation-arrow/navigation-arrow.component';
 
 registerLocaleData(localeDE);
 
@@ -54,8 +58,14 @@ function HttpLoaderFactory(httpClient: HttpClient) {
 
     // Components for Skills Page
     SkillsPageComponent,
+    CertificateSectionComponent,
+    EducationSectionComponent,
+    SkillSectionComponent,
     SkillCardComponent,
     CertificationBadgeComponent,
+
+    // Shared Components
+    NavigationArrowComponent,
   ],
   imports: [
     AppRoutingModule,

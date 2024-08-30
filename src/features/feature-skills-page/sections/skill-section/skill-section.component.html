@@ -1,0 +1,26 @@
+<div class="p-20 grid md:grid-cols-2 gap-4 justify-items-center">
+  <skill-card
+    [title]="'Frontend'"
+    [titleIcon]="'devices'"
+    [skillList]="['skill1', 'skill2', 'skill3']"
+  ></skill-card>
+  <skill-card
+    [title]="'Backend'"
+    [titleIcon]="'code'"
+    [skillList]="['skill1', 'skill2', 'skill3']"
+  ></skill-card>
+  <skill-card
+    [title]="'Infrastructure'"
+    [titleIcon]="'settings_suggest'"
+    [skillList]="['skill1', 'skill2', 'skill3']"
+  ></skill-card>
+  <skill-card
+    [title]="'Legal Specialization'"
+    [titleIcon]="'gavel'"
+    [skillList]="['skill1', 'skill2', 'skill3']"
+  ></skill-card>
+</div>
+
+<button class="my-auto" (click)="scrollDown()">
+  <navigation-arrow [color]="'primary'"></navigation-arrow>
+</button>

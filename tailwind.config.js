@@ -1,4 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
+const commonSizes = {
+  header: "84px",
+};
+
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
@@ -30,6 +35,12 @@ module.exports = {
       backgroundImage: (theme) => ({
         "bg-stripes": "url('./assets/pictures/background/background.svg')",
       }),
+      height: {
+        header: commonSizes.header,
+      },
+      padding: {
+        header: commonSizes.header,
+      },
     },
   },
   plugins: [],

@@ -1,0 +1,3 @@
+.height-minus-header {
+    height: calc(100vh - theme('height.header'));
+}
