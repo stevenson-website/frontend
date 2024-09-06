@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { DarkModeService } from 'src/app/services/darkmode.service';
 
 @Component({
   selector: 'skill-card',
@@ -10,5 +12,9 @@ export class SkillCardComponent {
   @Input() titleIcon: string = '';
   @Input() skillList: string[] = [];
 
-  constructor() {}
+  darkMode$: BehaviorSubject<boolean>;
+
+  constructor(private darkModeService: DarkModeService) {
+    this.darkMode$ = darkModeService.getBehaviorSubject();
+  }
 }
