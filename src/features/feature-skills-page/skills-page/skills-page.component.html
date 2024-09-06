@@ -1,20 +1,20 @@
 <div id="skills" class="h-screen snap-start flex justify-center items-center">
-  <skill-section (scrollDownEvent)="scrollToCertificates()"></skill-section>
-</div>
-<div
-  id="certificates"
-  class="h-screen snap-start flex justify-center items-center"
->
-  <certificate-section
-    (scrollUpEvent)="scrollToSkills()"
-    (scrollDownEvent)="scrollToEducation()"
-  ></certificate-section>
+  <skill-section (scrollDownEvent)="scrollToEducation()"></skill-section>
 </div>
 <div
   id="education"
   class="h-screen snap-start flex justify-center items-center"
 >
   <education-section
-    (scrollUpEvent)="scrollToCertificates()"
+    (scrollUpEvent)="scrollToSkills()"
+    (scrollDownEvent)="scrollToCertificates()"
   ></education-section>
+</div>
+<div
+  id="certificates"
+  class="h-screen snap-start flex justify-center items-center"
+>
+  <certificate-section
+    (scrollUpEvent)="scrollToEducation()"
+  ></certificate-section>
 </div>

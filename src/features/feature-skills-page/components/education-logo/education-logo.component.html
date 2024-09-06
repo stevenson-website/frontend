@@ -1,0 +1,10 @@
+<img
+  *ngIf="darkMode$ | async"
+  class="w-auto h-12 md:h-32 transform duration-300 hover:scale-105"
+  src="/assets/pictures/skills/education/university_logo_white.png"
+/>
+<img
+  *ngIf="!(darkMode$ | async)"
+  class="w-auto h-12 md:h-32 transform duration-300 hover:scale-105"
+  src="/assets/pictures/skills/education/university_logo_color.png"
+/>

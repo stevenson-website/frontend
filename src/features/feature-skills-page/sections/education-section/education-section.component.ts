@@ -9,6 +9,7 @@ import { DarkModeService } from 'src/app/services/darkmode.service';
 })
 export class EducationSectionComponent {
   @Output() scrollUpEvent = new EventEmitter<void>();
+  @Output() scrollDownEvent = new EventEmitter<void>();
 
   darkMode$: BehaviorSubject<boolean>;
 
@@ -18,5 +19,8 @@ export class EducationSectionComponent {
 
   scrollUp() {
     this.scrollUpEvent.emit();
+  }
+  scrollDown() {
+    this.scrollDownEvent.emit();
   }
 }

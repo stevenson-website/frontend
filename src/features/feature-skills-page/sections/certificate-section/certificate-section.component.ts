@@ -7,15 +7,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class CertificateSectionComponent {
   @Output() scrollUpEvent = new EventEmitter<void>();
-  @Output() scrollDownEvent = new EventEmitter<void>();
 
   constructor() {}
 
   scrollUp() {
     this.scrollUpEvent.emit();
-  }
-
-  scrollDown() {
-    this.scrollDownEvent.emit();
   }
 }

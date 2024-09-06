@@ -1,18 +1,29 @@
-<button (click)="scrollUp()">
-  <navigation-arrow [color]="'second'" [direction]="'up'"></navigation-arrow>
-</button>
-
-<div class="my-20">
-  Education
-
-  <img
-    *ngIf="darkMode$ | async"
-    class="w-auto h-32 transform duration-300 hover:scale-105"
-    src="/assets/pictures/about-me/education/university_logo_white.png"
-  />
-  <img
-    *ngIf="!(darkMode$ | async)"
-    class="w-auto h-32 transform duration-300 hover:scale-105"
-    src="/assets/pictures/about-me/education/university_logo_color.png"
-  />
+<div class="flex flex-col justify-between items-center">
+  <button (click)="scrollUp()">
+    <navigation-arrow [color]="'second'" [direction]="'up'"></navigation-arrow>
+  </button>
+  <div class="flex-grow flex items-center justify-center">
+    <div class="m-5 md:m-20 max-w-4xl">
+      <div class="mb-5">
+        <education-card
+          [title]="'feature-skills.education-section.cs.title'"
+          [text]="'feature-skills.education-section.cs.text'"
+          [date]="'feature-skills.education-section.cs.date'"
+        ></education-card>
+      </div>
+      <div class="mt-5">
+        <education-card
+          [title]="'feature-skills.education-section.law.title'"
+          [text]="'feature-skills.education-section.law.text'"
+          [date]="'feature-skills.education-section.law.date'"
+        ></education-card>
+      </div>
+    </div>
+  </div>
+  <button (click)="scrollDown()">
+    <navigation-arrow
+      [color]="'primary'"
+      [direction]="'down'"
+    ></navigation-arrow>
+  </button>
 </div>

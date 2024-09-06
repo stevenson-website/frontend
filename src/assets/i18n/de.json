@@ -1,13 +1,7 @@
 {
   "app": {
     "navigation": {
-      "feature-offers": "MEINE ANGEBOTE",
-      "feature-about-me": "ÜBER MICH",
-      "feature-contact": "KONTAKT",
-      "feature-customers": "KUNDEN",
-      "feature-faq": "FAQ",
-      "impressum": "Impressum",
-      "privacy-note": "Datenschutz"
+      "feature-skills": "MEINE SKILLS"
     },
     "pages": {
       "error": {
@@ -18,44 +12,19 @@
       }
     }
   },
-  "feature-main-page": {
-    "slogan-part-one": "Effektive Kommunikation.",
-    "slogan-part-two": "Maßgeschneiderte Lösungen."
-  },
-  "feature-about-me": {
-    "paragraph-one": "Herzlich willkommen! Mein Name ist Lorenz Kavallar – Jurist für Arbeitsrecht, diplomierter Mediator und Trainer an einer der führenden österreichischen Bildungseinrichtung für Erwachsenenbildung. Als engagierter Familienvater und leidenschaftlicher Gestalter möchte ich die Zukunft der Arbeit positiv mitprägen.",
-    "paragraph-two": "Meine Überzeugung: Erfolg in der Arbeitswelt basiert auf effektiver Kommunikation und starkem Teamgeist. Mit einem fundierten Hintergrund im Arbeitsrecht und umfassendem zwischenmenschlichem Know-how habe ich viele Konfliktssituationen erlebt und erfolgreich arbeitsrechtliche Gerichtsprozesse begleitet.",
-    "paragraph-three": "Als Bindeglied zwischen Führungsebene und Belegschaft, sowie innerhalb von Teams, setze ich auf eine wertschätzende Kommunikation und fördere einen harmonischen Teamspirit. Mein Ziel ist es, Unternehmen und Einzelpersonen zu nachhaltigem Erfolg zu verhelfen, indem wir gemeinsam die Potenziale einer positiven und konstruktiven Arbeitskultur entfalten.",
-    "citation": "Kommunikation ist nicht nur das, was gesagt wird, sondern auch das, was verstanden wird.",
-    "author": "Lorenz Kavallar"
-  },
-  "feature-my-offery": {
-    "navigation": {
-      "continue-reading": "MEHR ERFAHREN"
-    },
-    "offer-one": {
-      "headline-short": "Mediation",
-      "headline-long": "Mediation in der Arbeitswelt",
-      "description-short": "In meiner Rolle als diplomierter Mediator fördere ich konstruktive Gespräche in Konfliktsituationen.",
-      "description-long": ""
-    },
-    "offer-two": {
-      "headline-short": "Verhandlungen",
-      "headline-long": "Verhandlung erfolgreich führen",
-      "description-short": "Ihr Training für erfolgreiche Verhandlungen startet hier. Erfahren Sie, wie Sie aus Gegnern Partner machen können – das Verhandlungsgeschick ist trainierbar.",
-      "description-long": ""
-    },
-    "offer-three": {
-      "headline-short": "Wertschätzende Kommunikation",
-      "headline-long": "Workshop: Wertschätzende Kommunikation für Erfolg im Team",
-      "description-short": "Erkunden Sie die Prinzipien der wertschätzenden Kommunikation in meinen interaktiven Workshops.",
-      "description-long": ""
+  "feature-skills": {
+    "skill-section": {},
+    "education-section": {
+      "law": {
+        "title": "Rechtswissenschaften (Mag. iur.)",
+        "date": "Abschluss 2020",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+      },
+      "cs": {
+        "title": "Wirtschaftsinformatik (B.Sc.)",
+        "date": "Abschluss 2023",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+      }
     }
-  },
-  "feature-contact": {
-    "title": "KONTAKT",
-    "address": "Graz, Österreich",
-    "mail": "lorenz.kavallar27@gmx.at",
-    "telephone": "+43699 10725635"
   }
 }

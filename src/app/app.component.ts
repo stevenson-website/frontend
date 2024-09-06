@@ -31,7 +31,7 @@ export class AppComponent {
       },
       {
         path: 'skills',
-        translationName: 'app.navigation.feature-offers',
+        translationName: 'app.navigation.feature-skills',
       }
     );
   }

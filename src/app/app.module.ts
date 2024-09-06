@@ -36,6 +36,8 @@ import { CertificateSectionComponent } from 'src/features/feature-skills-page/se
 import { EducationSectionComponent } from 'src/features/feature-skills-page/sections/education-section/education-section.component';
 import { SkillSectionComponent } from 'src/features/feature-skills-page/sections/skill-section/skill-section.component';
 import { NavigationArrowComponent } from 'src/shared/components/navigation-arrow/navigation-arrow.component';
+import { EducationCardComponent } from 'src/features/feature-skills-page/components/education-card/education-card.component';
+import { EducationLogoComponent } from 'src/features/feature-skills-page/components/education-logo/education-logo.component';
 
 registerLocaleData(localeDE);
 
@@ -60,6 +62,8 @@ function HttpLoaderFactory(httpClient: HttpClient) {
     SkillsPageComponent,
     CertificateSectionComponent,
     EducationSectionComponent,
+    EducationCardComponent,
+    EducationLogoComponent,
     SkillSectionComponent,
     SkillCardComponent,
     CertificationBadgeComponent,

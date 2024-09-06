@@ -1,13 +1,13 @@
-<div class="rounded w-64 bg-primary-third text-background-dark">
-  <div class="p-5">
-    <div class="inline-flex">
-      <mat-icon class="mr-2">{{ titleIcon }}</mat-icon>
-      <div class="flex items-center justify-center">
-        <div class="font-bold">{{ title }}</div>
-      </div>
+<div
+  class="bg-primary-third text-background-dark rounded w-60 h-28 text-xs p-4 sm:w-72 md:h-44 md:text-xl lg:w-96"
+>
+  <div class="inline-flex">
+    <mat-icon class="mr-2">{{ titleIcon }}</mat-icon>
+    <div class="flex items-center justify-center">
+      <div class="font-bold">{{ title }}</div>
     </div>
-    <ul class="list-disc pl-3">
-      <li *ngFor="let skill of skillList">{{ skill }}</li>
-    </ul>
   </div>
+  <ul class="list-disc pl-3">
+    <li *ngFor="let skill of skillList">{{ skill }}</li>
+  </ul>
 </div>

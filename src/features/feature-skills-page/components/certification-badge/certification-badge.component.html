@@ -1,13 +1,13 @@
 <div
   id="{{ 'container-' + logo }}"
-  class="w-32 flex items-center justify-center"
+  class="h-auto w-24 text-xs md:w-32 md:text-md flex items-center justify-center"
   (mouseover)="onHover()"
   (mouseleave)="onUnhover()"
 >
   <div class="relative">
     <img
       id="{{ 'logo-' + logo }}"
-      class="w-auto h-32 transform duration-300 hover:scale-110 opacity-100"
+      class="transform duration-300 hover:scale-110 opacity-100"
       src="{{ logo }}"
     />
     <div
