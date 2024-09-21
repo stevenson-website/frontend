@@ -1,20 +1,31 @@
+<button
+  class="fixed top-24 left-1/2 -translate-x-1/2 z-10"
+  (click)="scrollUp()"
+>
+  <navigation-arrow [color]="'second'" [direction]="'up'"></navigation-arrow>
+</button>
+
 <div id="skills" class="h-screen snap-start flex justify-center items-center">
-  <skill-section (scrollDownEvent)="scrollToEducation()"></skill-section>
+  <skill-section></skill-section>
 </div>
+
 <div
   id="education"
   class="h-screen snap-start flex justify-center items-center"
 >
-  <education-section
-    (scrollUpEvent)="scrollToSkills()"
-    (scrollDownEvent)="scrollToCertificates()"
-  ></education-section>
+  <education-section></education-section>
 </div>
+
 <div
   id="certificates"
   class="h-screen snap-start flex justify-center items-center"
 >
-  <certificate-section
-    (scrollUpEvent)="scrollToEducation()"
-  ></certificate-section>
+  <certificate-section></certificate-section>
 </div>
+
+<button
+  class="fixed bottom-10 left-1/2 -translate-x-1/2 z-10"
+  (click)="scrollDown()"
+>
+  <navigation-arrow [color]="'primary'" [direction]="'down'"></navigation-arrow>
+</button>

@@ -13,18 +13,45 @@
     }
   },
   "feature-skills": {
-    "skill-section": {},
-    "education-section": {
-      "law": {
-        "title": "Law (Mag. iur.)",
-        "date": "Graduation 2020",
-        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+    "skill-section": {
+      "frontend": {
+        "title": "Frontend",
+        "js-ts": "JavaScript/TypeScript",
+        "html": "HTML",
+        "tailwind": "Tailwind"
       },
-      "cs": {
-        "title": "Business Informatics (B.Sc.)",
-        "date": "Graduation 2023",
-        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+      "backend": {
+        "title": "Backend",
+        "js-ts": "JavaScript/TypeScript",
+        "java": "Java",
+        "node": "Node.js",
+        "spring": "Spring Boot"
+      },
+      "infra": {
+        "title": "Infrastructure",
+        "gcp": "Google Cloud Platform",
+        "terraform": "Terraform",
+        "gh": "GitHub",
+        "ci-cd": "CI/CD",
+        "packer": "HashiCorp Packer"
+      },
+      "legal": {
+        "title": "Fields of Law",
+        "privacy": "Data Protection Law",
+        "it": "IT Law",
+        "tele": "Telecommunications Law"
+      },
+      "education-section": {
+        "law": {
+          "title": "Law (Mag. iur.)",
+          "date": "Graduation 2020",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+        },
+        "cs": {
+          "title": "Business Informatics (B.Sc.)",
+          "date": "Graduation 2023",
+          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+        }
       }
     }
   }
-}

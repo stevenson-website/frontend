@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, EventEmitter, Output } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { gsap } from 'gsap';
 
 @Component({
@@ -7,7 +7,6 @@ import { gsap } from 'gsap';
   styleUrls: ['./skill-section.component.css'],
 })
 export class SkillSectionComponent implements AfterViewInit {
-  @Output() scrollDownEvent = new EventEmitter<void>();
   constructor() {}
 
   ngAfterViewInit(): void {
@@ -33,9 +32,5 @@ export class SkillSectionComponent implements AfterViewInit {
         duration: 1,
       });
     });
-  }
-
-  scrollDown() {
-    this.scrollDownEvent.emit();
   }
 }

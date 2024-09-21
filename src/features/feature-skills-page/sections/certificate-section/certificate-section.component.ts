@@ -6,11 +6,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./certificate-section.component.css'],
 })
 export class CertificateSectionComponent {
-  @Output() scrollUpEvent = new EventEmitter<void>();
-
   constructor() {}
-
-  scrollUp() {
-    this.scrollUpEvent.emit();
-  }
 }

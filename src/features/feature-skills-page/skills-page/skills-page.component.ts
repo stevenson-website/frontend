@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, HostListener } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'skills-page',
@@ -7,23 +7,33 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./skills-page.component.css'],
 })
 export class SkillsPageComponent {
-  constructor() {}
+  downScrollDeactivated$: BehaviorSubject<boolean>;
+  upScrollDeactivated$: BehaviorSubject<boolean>;
 
-  scrollToCertificates() {
-    const certs = document.getElementById('certificates');
-    if (!certs) return;
-    certs.scrollIntoView({ behavior: 'smooth' });
+  constructor() {
+    this.upScrollDeactivated$ = new BehaviorSubject<boolean>(true);
+    this.downScrollDeactivated$ = new BehaviorSubject<boolean>(false);
   }
 
-  scrollToEducation() {
-    const education = document.getElementById('education');
-    if (!education) return;
-    education.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  scrollToSkills() {
+  scrollUp() {
     const skills = document.getElementById('skills');
-    if (!skills) return;
-    skills.scrollIntoView({ behavior: 'smooth' });
+    const education = document.getElementById('education');
+    const certs = document.getElementById('certificates');
+
+    if (education?.getBoundingClientRect().top === 0)
+      skills?.scrollIntoView({ behavior: 'smooth' });
+    else if (certs?.getBoundingClientRect().top === 0)
+      education?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  scrollDown() {
+    const skills = document.getElementById('skills');
+    const education = document.getElementById('education');
+    const certs = document.getElementById('certificates');
+
+    if (skills?.getBoundingClientRect().top === 0)
+      education?.scrollIntoView({ behavior: 'smooth' });
+    else if (education?.getBoundingClientRect().top === 0)
+      certs?.scrollIntoView({ behavior: 'smooth' });
   }
 }

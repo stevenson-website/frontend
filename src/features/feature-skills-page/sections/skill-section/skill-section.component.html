@@ -1,34 +1,45 @@
-<div class="flex flex-col justify-between items-center">
-  <div class="flex-grow flex items-center justify-center">
-    <div class="p-5 md:p-20 grid md:grid-cols-2 gap-4 justify-items-center">
-      <skill-card
-        class="skill"
-        [title]="'Frontend'"
-        [titleIcon]="'devices'"
-        [skillList]="['JavaScript/TypeScript', 'HTML/CSS', 'Tailwind']"
-      ></skill-card>
-      <skill-card
-        class="skill"
-        [title]="'Backend'"
-        [titleIcon]="'code'"
-        [skillList]="['skill1', 'skill2', 'skill3']"
-      ></skill-card>
-      <skill-card
-        class="skill"
-        [title]="'Infrastructure'"
-        [titleIcon]="'settings_suggest'"
-        [skillList]="['skill1', 'skill2', 'skill3']"
-      ></skill-card>
-      <skill-card
-        class="skill"
-        [title]="'Legal Specialization'"
-        [titleIcon]="'gavel'"
-        [skillList]="['skill1', 'skill2', 'skill3']"
-      ></skill-card>
-    </div>
-  </div>
-
-  <button class="my-auto" (click)="scrollDown()">
-    <navigation-arrow [color]="'primary'"></navigation-arrow>
-  </button>
+<div class="p-5 md:p-20 grid md:grid-cols-2 gap-4 justify-items-center">
+  <skill-card
+    class="skill"
+    [title]="'feature-skills.skill-section.frontend.title'"
+    [titleIcon]="'devices'"
+    [skillList]="[
+      'feature-skills.skill-section.frontend.js-ts',
+      'feature-skills.skill-section.frontend.html',
+      'feature-skills.skill-section.frontend.tailwind'
+    ]"
+  ></skill-card>
+  <skill-card
+    class="skill"
+    [title]="'feature-skills.skill-section.backend.title'"
+    [titleIcon]="'code'"
+    [skillList]="[
+      'feature-skills.skill-section.backend.js-ts',
+      'feature-skills.skill-section.backend.java',
+      'feature-skills.skill-section.backend.node',
+      'feature-skills.skill-section.backend.spring'
+    ]"
+  ></skill-card>
+  <skill-card
+    class="skill"
+    [title]="'feature-skills.skill-section.infra.title'"
+    [titleIcon]="'settings_suggest'"
+    [skillList]="[
+      'feature-skills.skill-section.infra.gcp',
+      'feature-skills.skill-section.infra.terraform',
+      'feature-skills.skill-section.infra.gh',
+      'feature-skills.skill-section.infra.ci-cd',
+      'feature-skills.skill-section.infra.packer'
+    ]"
+  ></skill-card>
+  <skill-card
+    class="skill"
+    [title]="'feature-skills.skill-section.legal.title'"
+    [titleIcon]="'gavel'"
+    [skillList]="[
+      'feature-skills.skill-section.legal.privacy',
+      'feature-skills.skill-section.legal.it',
+      'feature-skills.skill-section.legal.tele'
+    ]"
+  ></skill-card>
 </div>

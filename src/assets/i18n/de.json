@@ -13,7 +13,35 @@
     }
   },
   "feature-skills": {
-    "skill-section": {},
+    "skill-section": {
+      "frontend": {
+        "title": "Frontend",
+        "js-ts": "JavaScript/TypeScript",
+        "html": "HTML",
+        "tailwind": "Tailwind"
+      },
+      "backend": {
+        "title": "Backend",
+        "js-ts": "JavaScript/TypeScript",
+        "java": "Java",
+        "node": "Node.js",
+        "spring": "Spring Boot"
+      },
+      "infra": {
+        "title": "Infrastruktur",
+        "gcp": "Google Cloud Platform",
+        "terraform": "Terraform",
+        "gh": "GitHub",
+        "ci-cd": "CI/CD",
+        "packer": "HashiCorp Packer"
+      },
+      "legal": {
+        "title": "Rechtsgebiete",
+        "privacy": "Datenschutzrecht",
+        "it": "IT-Recht",
+        "tele": "Telekommunikationsrecht"
+      }
+    },
     "education-section": {
       "law": {
         "title": "Rechtswissenschaften (Mag. iur.)",
