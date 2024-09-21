@@ -1,7 +1,8 @@
 {
   "app": {
     "navigation": {
-      "feature-skills": "MY SKILLS"
+      "feature-skills": "MY SKILLS",
+      "feature-games": "GAMES"
     },
     "pages": {
       "error": {
@@ -54,4 +55,8 @@
         }
       }
     }
+  },
+  "feature-games": {
+    "cube-text": "Spin me"
   }
+}

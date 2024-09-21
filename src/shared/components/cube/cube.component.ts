@@ -13,6 +13,7 @@ import { BehaviorSubject, skip, Subject, takeUntil } from 'rxjs';
 })
 export class CubeComponent implements OnInit {
   @Input() cubeSize: 'SM' | 'MD' | 'LG' = 'MD';
+  @Input() description: string = '';
 
   backgroundColors = {
     light: 0xffffff,

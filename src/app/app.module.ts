@@ -26,7 +26,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MaterialModule } from './modules/material/material.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainPageComponent } from 'src/features/feature-main-page/main-page/main-page.component';
-import { CubeComponent } from 'src/features/feature-main-page/components/cube/cube.component';
+import { CubeComponent } from 'src/shared/components/cube/cube.component';
 import { DarkModeService } from './services/darkmode.service';
 import { SkillsPageComponent } from 'src/features/feature-skills-page/skills-page/skills-page.component';
 import { SkillCardComponent } from 'src/features/feature-skills-page/components/skill-card/skill-card.component';
@@ -38,6 +38,7 @@ import { SkillSectionComponent } from 'src/features/feature-skills-page/sections
 import { NavigationArrowComponent } from 'src/shared/components/navigation-arrow/navigation-arrow.component';
 import { EducationCardComponent } from 'src/features/feature-skills-page/components/education-card/education-card.component';
 import { EducationLogoComponent } from 'src/features/feature-skills-page/components/education-logo/education-logo.component';
+import { GamesPageComponent } from 'src/features/feature-games-page/games-page/games-page.component';
 
 registerLocaleData(localeDE);
 
@@ -56,7 +57,6 @@ function HttpLoaderFactory(httpClient: HttpClient) {
 
     // Components for Main Page
     MainPageComponent,
-    CubeComponent,
 
     // Components for Skills Page
     SkillsPageComponent,
@@ -68,7 +68,11 @@ function HttpLoaderFactory(httpClient: HttpClient) {
     SkillCardComponent,
     CertificationBadgeComponent,
 
+    // Components for Games Page
+    GamesPageComponent,
+
     // Shared Components
+    CubeComponent,
     NavigationArrowComponent,
   ],
   imports: [

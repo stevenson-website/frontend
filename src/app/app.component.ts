@@ -32,6 +32,10 @@ export class AppComponent {
       {
         path: 'skills',
         translationName: 'app.navigation.feature-skills',
+      },
+      {
+        path: 'games',
+        translationName: 'app.navigation.feature-games',
       }
     );
   }
