@@ -1,45 +1,28 @@
-<div class="p-5 md:p-20 grid md:grid-cols-2 gap-4 justify-items-center">
+<div
+  *ngIf="isMobile"
+  class="w-80 flex snap-x snap-mandatory gap-6 overflow-x-auto"
+>
+  <ng-container *ngFor="let card of cards">
+    <div class="snap-center flex justify-center">
+      <skill-card
+        class="shrink-0"
+        [title]="card.title"
+        [titleIcon]="card.icon"
+        [skillList]="card.skillList"
+      ></skill-card>
+    </div>
+  </ng-container>
+</div>
+
+<div
+  *ngIf="!isMobile"
+  class="p-5 md:p-20 grid md:grid-cols-2 gap-4 justify-items-center"
+>
   <skill-card
+    *ngFor="let card of cards"
     class="skill"
-    [title]="'feature-skills.skill-section.frontend.title'"
-    [titleIcon]="'devices'"
-    [skillList]="[
-      'feature-skills.skill-section.frontend.js-ts',
-      'feature-skills.skill-section.frontend.html',
-      'feature-skills.skill-section.frontend.tailwind'
-    ]"
-  ></skill-card>
-  <skill-card
-    class="skill"
-    [title]="'feature-skills.skill-section.backend.title'"
-    [titleIcon]="'code'"
-    [skillList]="[
-      'feature-skills.skill-section.backend.js-ts',
-      'feature-skills.skill-section.backend.java',
-      'feature-skills.skill-section.backend.node',
-      'feature-skills.skill-section.backend.spring'
-    ]"
-  ></skill-card>
-  <skill-card
-    class="skill"
-    [title]="'feature-skills.skill-section.infra.title'"
-    [titleIcon]="'settings_suggest'"
-    [skillList]="[
-      'feature-skills.skill-section.infra.gcp',
-      'feature-skills.skill-section.infra.terraform',
-      'feature-skills.skill-section.infra.gh',
-      'feature-skills.skill-section.infra.ci-cd',
-      'feature-skills.skill-section.infra.packer'
-    ]"
-  ></skill-card>
-  <skill-card
-    class="skill"
-    [title]="'feature-skills.skill-section.legal.title'"
-    [titleIcon]="'gavel'"
-    [skillList]="[
-      'feature-skills.skill-section.legal.privacy',
-      'feature-skills.skill-section.legal.it',
-      'feature-skills.skill-section.legal.tele'
-    ]"
+    [title]="card.title"
+    [titleIcon]="card.icon"
+    [skillList]="card.skillList"
   ></skill-card>
 </div>

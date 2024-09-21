@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { gsap } from 'gsap';
 
 @Component({
@@ -7,7 +7,67 @@ import { gsap } from 'gsap';
   styleUrls: ['./skill-section.component.css'],
 })
 export class SkillSectionComponent implements AfterViewInit {
-  constructor() {}
+  isMobile: boolean;
+
+  cards: {
+    title: string;
+    icon: string;
+    skillList: string[];
+  }[] = [
+    {
+      title: 'feature-skills.skill-section.frontend.title',
+      icon: 'devices',
+      skillList: [
+        'feature-skills.skill-section.frontend.js-ts',
+        'feature-skills.skill-section.frontend.html',
+        'feature-skills.skill-section.frontend.tailwind',
+      ],
+    },
+    {
+      title: 'feature-skills.skill-section.frontend.title',
+      icon: 'code',
+      skillList: [
+        'feature-skills.skill-section.backend.js-ts',
+        'feature-skills.skill-section.backend.java',
+        'feature-skills.skill-section.backend.node',
+        'feature-skills.skill-section.backend.spring',
+      ],
+    },
+    {
+      title: 'feature-skills.skill-section.frontend.title',
+      icon: 'settings_suggest',
+      skillList: [
+        'feature-skills.skill-section.infra.gcp',
+        'feature-skills.skill-section.infra.terraform',
+        'feature-skills.skill-section.infra.gh',
+        'feature-skills.skill-section.infra.ci-cd',
+        'feature-skills.skill-section.infra.packer',
+      ],
+    },
+    {
+      title: 'feature-skills.skill-section.frontend.title',
+      icon: 'gavel',
+      skillList: [
+        'feature-skills.skill-section.legal.privacy',
+        'feature-skills.skill-section.legal.it',
+        'feature-skills.skill-section.legal.tele',
+      ],
+    },
+  ];
+
+  constructor() {
+    this.isMobile = false;
+    this.checkIfMobile();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.checkIfMobile();
+  }
+
+  checkIfMobile() {
+    this.isMobile = window.innerWidth < 768;
+  }
 
   ngAfterViewInit(): void {
     const skills = Array.from(document.querySelectorAll('.skill'));

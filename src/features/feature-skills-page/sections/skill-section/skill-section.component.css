@@ -1,0 +1,34 @@
+
+
+/* Hide the scrollbar track */
+.overflow-x-auto::-webkit-scrollbar {
+    width: 3px; /* Width of the scrollbar */
+}
+
+/* The draggable part of the scrollbar (the thumb) */
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background-color: #ee7383; /* Color of the scrollbar thumb */
+    border-radius: 3px; /* Rounded corners for the thumb */
+}
+
+/* Optional: Add hover effect for the thumb */
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background-color: #f8c7cd; /* Darker color on hover */
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: transparent;
+ }
+
+
+
+/* Optional: Customize scrollbar for Firefox */
+.scrollable {
+    scrollbar-width: thin; /* Firefox: creates a thin scrollbar */
+    scrollbar-color: #ee7383; /* Firefox: thumb color and track color */
+}
+/* To hide the track in Firefox */
+.scrollable::-webkit-scrollbar-track {
+    background: transparent; /* Hide track */
+}
+
