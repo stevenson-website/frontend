@@ -15,26 +15,7 @@ export class SkillSectionComponent implements AfterViewInit {
     skillList: string[];
   }[] = [
     {
-      title: 'feature-skills.skill-section.frontend.title',
-      icon: 'devices',
-      skillList: [
-        'feature-skills.skill-section.frontend.js-ts',
-        'feature-skills.skill-section.frontend.html',
-        'feature-skills.skill-section.frontend.tailwind',
-      ],
-    },
-    {
-      title: 'feature-skills.skill-section.frontend.title',
-      icon: 'code',
-      skillList: [
-        'feature-skills.skill-section.backend.js-ts',
-        'feature-skills.skill-section.backend.java',
-        'feature-skills.skill-section.backend.node',
-        'feature-skills.skill-section.backend.spring',
-      ],
-    },
-    {
-      title: 'feature-skills.skill-section.frontend.title',
+      title: 'feature-skills.skill-section.infra.title',
       icon: 'settings_suggest',
       skillList: [
         'feature-skills.skill-section.infra.gcp',
@@ -46,6 +27,25 @@ export class SkillSectionComponent implements AfterViewInit {
     },
     {
       title: 'feature-skills.skill-section.frontend.title',
+      icon: 'devices',
+      skillList: [
+        'feature-skills.skill-section.frontend.js-ts',
+        'feature-skills.skill-section.frontend.html',
+        'feature-skills.skill-section.frontend.tailwind',
+      ],
+    },
+    {
+      title: 'feature-skills.skill-section.backend.title',
+      icon: 'code',
+      skillList: [
+        'feature-skills.skill-section.backend.js-ts',
+        'feature-skills.skill-section.backend.java',
+        'feature-skills.skill-section.backend.node',
+        'feature-skills.skill-section.backend.spring',
+      ],
+    },
+    {
+      title: 'feature-skills.skill-section.legal.title',
       icon: 'gavel',
       skillList: [
         'feature-skills.skill-section.legal.privacy',

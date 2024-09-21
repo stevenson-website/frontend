@@ -1,17 +1,19 @@
 <div
-  class="bg-opacity-50 border rounded w-60 text-xs sm:w-76 md:h-44 md:text-xl lg:w-96"
+  class="bg-opacity-50 border rounded w-60 h-44 text-xs sm:w-72 sm:h-52 sm:text-base md:w-80 md:h-60 lg:w-96"
   [ngClass]="{
     'bg-background-dark border-white text-white': (darkMode$ | async),
     'bg-white border-background-dark text-background-dark': !(darkMode$ | async)
   }"
 >
-  <div class="p-2 md:p-4 inline-flex">
+  <div class="p-4 pb-2 inline-flex">
     <mat-icon class="mr-2">{{ titleIcon }}</mat-icon>
     <div class="flex items-center justify-center">
-      <div class="font-bold">{{ title | translate }}</div>
+      <div class="font-bold text-base sm:text-lg md:text-xl">
+        {{ title | translate }}
+      </div>
     </div>
   </div>
-  <div class="p-2 md:p-4">
+  <div class="p-4 pt-2">
     <ng-container *ngFor="let skill of skillList; let i = index">
       <div class="inline-block pr-2 pb-2">
         <div

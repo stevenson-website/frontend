@@ -1,26 +1,23 @@
-
-
 /* Hide the scrollbar track */
 .overflow-x-auto::-webkit-scrollbar {
-    width: 3px; /* Width of the scrollbar */
+    height: 64px /* Height of the scrollbar */
 }
 
 /* The draggable part of the scrollbar (the thumb) */
 .overflow-x-auto::-webkit-scrollbar-thumb {
-    background-color: #ee7383; /* Color of the scrollbar thumb */
-    border-radius: 3px; /* Rounded corners for the thumb */
+    background: url('../../../../assets/pictures/icons/arrows_bidirectional.svg') no-repeat center;  /* Background image as thumb */
+    background-size: contain;  /* Scale the icon to fit */
+    color: #f8c7cd; 
 }
 
 /* Optional: Add hover effect for the thumb */
 .overflow-x-auto::-webkit-scrollbar-thumb:hover {
-    background-color: #f8c7cd; /* Darker color on hover */
+    color: #f8c7cd; /* Darker color on hover */
 }
 
 .overflow-x-auto::-webkit-scrollbar-track {
     background: transparent;
  }
-
-
 
 /* Optional: Customize scrollbar for Firefox */
 .scrollable {

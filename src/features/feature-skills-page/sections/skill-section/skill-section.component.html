@@ -1,22 +1,29 @@
-<div
-  *ngIf="isMobile"
-  class="w-80 flex snap-x snap-mandatory gap-6 overflow-x-auto"
->
-  <ng-container *ngFor="let card of cards">
-    <div class="snap-center flex justify-center">
-      <skill-card
-        class="shrink-0"
-        [title]="card.title"
-        [titleIcon]="card.icon"
-        [skillList]="card.skillList"
-      ></skill-card>
+<div *ngIf="isMobile">
+  <div
+    class="w-80 sm:w-96 border-x border-dashed flex snap-x snap-mandatory gap-6 overflow-x-auto"
+  >
+    <div class="snap-center shrink-0">
+      <div class="shrink-0 w-4"></div>
     </div>
-  </ng-container>
+    <ng-container *ngFor="let card of cards">
+      <div class="snap-center my-8 flex justify-center">
+        <skill-card
+          class="shrink-0"
+          [title]="card.title"
+          [titleIcon]="card.icon"
+          [skillList]="card.skillList"
+        ></skill-card>
+      </div>
+    </ng-container>
+    <div class="snap-center shrink-0">
+      <div class="shrink-0 w-4"></div>
+    </div>
+  </div>
 </div>
 
 <div
   *ngIf="!isMobile"
-  class="p-5 md:p-20 grid md:grid-cols-2 gap-4 justify-items-center"
+  class="p-5 md:p-15 lg:p-20 grid md:grid-cols-2 gap-4 justify-items-center"
 >
   <skill-card
     *ngFor="let card of cards"
