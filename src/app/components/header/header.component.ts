@@ -6,7 +6,9 @@ import {
   Output,
 } from '@angular/core';
 import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 import { NavigationRoute } from 'src/app/models/navigation-route';
+import { DarkModeService } from 'src/app/services/darkmode.service';
 
 @Component({
   selector: 'app-header',
@@ -21,7 +23,14 @@ export class HeaderComponent implements OnDestroy {
 
   @Input() hamburgerMenuTilted = false;
 
-  constructor(private router: Router) {}
+  darkMode$: BehaviorSubject<boolean>;
+
+  constructor(
+    private router: Router,
+    private darkModeService: DarkModeService
+  ) {
+    this.darkMode$ = darkModeService.getBehaviorSubject();
+  }
   ngOnDestroy(): void {
     throw new Error('Method not implemented.');
   }

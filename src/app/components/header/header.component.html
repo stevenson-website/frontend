@@ -5,8 +5,16 @@
       src="/assets/pictures/icons/logo.png"
     />
   </button>
-  <button class="inline-flex" (click)="darkModeToggled()">
-    <mat-icon>sunny_snowing</mat-icon>
+
+  <button>
+    <mat-icon
+      [ngClass]="{
+      'hover:text-yellow': (darkMode$ | async),
+      'hover:text-purple': !(darkMode$ | async),
+    }"
+      (click)="darkModeToggled()"
+      >{{ (darkMode$ | async) ? "sunny" : "mode_night" }}</mat-icon
+    >
   </button>
 
   <!-- Shown on medium screens and above -->
