@@ -1,27 +1,71 @@
 <div class="flex justify-between h-header fixed w-full top-0 z-10">
-  <button (click)="goToMainPage()">
-    <img
-      class="w-auto h-20 transform duration-300 hover:scale-110"
-      src="/assets/pictures/icons/logo.png"
-    />
-  </button>
+  <div class="flex justify-start">
+    <button (click)="goToMainPage()">
+      <img
+        *ngIf="darkMode$ | async"
+        class="w-auto h-20 transform duration-300 hover:scale-110"
+        src="/assets/pictures/icons/home_dark.svg"
+      />
+      <img
+        *ngIf="!(darkMode$ | async)"
+        class="w-auto h-20 transform duration-300 hover:scale-110"
+        src="/assets/pictures/icons/home_light.svg"
+      />
+    </button>
 
-  <button>
-    <mat-icon
-      [ngClass]="{
-      'hover:text-yellow': (darkMode$ | async),
-      'hover:text-purple': !(darkMode$ | async),
-    }"
-      (click)="darkModeToggled()"
-      >{{ (darkMode$ | async) ? "sunny" : "mode_night" }}</mat-icon
-    >
-  </button>
+    <div class="mt-4 flex-col justify-between">
+      <div class="flex mb-2">
+        <button class="mx-6">
+          <mat-icon
+            [ngClass]="{
+            'hover:text-yellow': (darkMode$ | async),
+            'hover:text-purple': !(darkMode$ | async),
+          }"
+            (click)="darkModeToggled()"
+            >{{ (darkMode$ | async) ? "sunny" : "mode_night" }}</mat-icon
+          >
+        </button>
+        <img
+          class="h-5 w-auto"
+          *ngIf="darkMode$ | async"
+          src="/assets/pictures/icons/arrow_light.svg"
+        />
+        <img
+          class="h-5 w-auto"
+          *ngIf="!(darkMode$ | async)"
+          src="/assets/pictures/icons/arrow_dark.svg"
+        />
+      </div>
+
+      <div>
+        <img
+          class="h-5 w-auto"
+          *ngIf="darkMode$ | async"
+          src="/assets/pictures/icons/home_arrow_light.svg"
+        />
+        <img
+          class="h-5 w-auto"
+          *ngIf="!(darkMode$ | async)"
+          src="/assets/pictures/icons/home_arrow_dark.svg"
+        />
+      </div>
+    </div>
+  </div>
 
   <!-- Shown on medium screens and above -->
   <div class="hidden md:flex">
-    <ng-container *ngFor="let route of navigationRoutes">
-      <button mat-button (click)="goToPage(route.path)">
-        {{ route.translationName | translate }}
+    <ng-container *ngFor="let route of navigationRoutes; let i = index">
+      <button class="mx-4" mat-button (click)="goToPage(route.path)">
+        <div
+          class="border-b-2 border-opacity-0 border-white transform duration-500"
+          [ngClass]="{
+            'hover:border-b-primary-main' : i % 3 === 0,
+            'hover:border-b-primary-second' : i % 3 === 1,
+            'hover:border-b-primary-third' : i % 3 === 2,
+          }"
+        >
+          {{ route.translationName | translate }}
+        </div>
       </button>
     </ng-container>
   </div>

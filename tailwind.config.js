@@ -43,6 +43,9 @@ module.exports = {
       padding: {
         header: commonSizes.header,
       },
+      boxShadow: {
+        sundown: "0 0 30px rgba(167, 132, 159, 0.9)",
+      },
     },
   },
   plugins: [],

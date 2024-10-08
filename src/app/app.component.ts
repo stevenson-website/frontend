@@ -26,8 +26,8 @@ export class AppComponent {
   registerNavigationRoutes() {
     this.navigationRoutes.push(
       {
-        path: 'about-me',
-        translationName: 'app.navigation.feature-about-me',
+        path: '',
+        translationName: 'app.navigation.feature-main',
       },
       {
         path: 'skills',

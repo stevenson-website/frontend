@@ -1,8 +1,9 @@
 {
   "app": {
     "navigation": {
+      "feature-main": "HOME",
       "feature-skills": "MEINE SKILLS",
-      "feature-games": "SPIELE"
+      "feature-games": "PROJEKTE"
     },
     "pages": {
       "error": {
