@@ -18,11 +18,11 @@
         <button class="mx-6">
           <mat-icon
             [ngClass]="{
-            'hover:text-yellow': (darkMode$ | async),
-            'hover:text-purple': !(darkMode$ | async),
+            'hover:text-yellow': !(darkMode$ | async),
+            'hover:text-purple': (darkMode$ | async),
           }"
             (click)="darkModeToggled()"
-            >{{ (darkMode$ | async) ? "sunny" : "mode_night" }}</mat-icon
+            >{{ (darkMode$ | async) ? "mode_night" : "sunny" }}</mat-icon
           >
         </button>
         <img

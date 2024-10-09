@@ -1,4 +1,6 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { DarkModeService } from 'src/app/services/darkmode.service';
 
 @Component({
   selector: 'main-page',
@@ -8,7 +10,11 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 export class MainPageComponent {
   @ViewChild('fadeElementBackground') fadeElementRefProfilePic!: ElementRef;
 
-  constructor() {}
+  darkMode$: BehaviorSubject<boolean>;
+
+  constructor(private darkModeService: DarkModeService) {
+    this.darkMode$ = darkModeService.getBehaviorSubject();
+  }
 
   @HostListener('window:scroll')
   onWindowScroll() {

@@ -36,6 +36,10 @@ export class AppComponent {
       {
         path: 'games',
         translationName: 'app.navigation.feature-games',
+      },
+      {
+        path: 'contact',
+        translationName: 'app.navigation.feature-contact',
       }
     );
   }

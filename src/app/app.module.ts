@@ -39,6 +39,8 @@ import { NavigationArrowComponent } from 'src/shared/components/navigation-arrow
 import { EducationCardComponent } from 'src/features/feature-skills-page/components/education-card/education-card.component';
 import { EducationLogoComponent } from 'src/features/feature-skills-page/components/education-logo/education-logo.component';
 import { GamesPageComponent } from 'src/features/feature-games-page/games-page/games-page.component';
+import { DynamicTitleComponent } from 'src/features/feature-main-page/components/dynamic-title/dynamic-title.component';
+import { ContactPageComponent } from 'src/features/feature-contact/contact-page/contact-page.component';
 
 registerLocaleData(localeDE);
 
@@ -57,6 +59,7 @@ function HttpLoaderFactory(httpClient: HttpClient) {
 
     // Components for Main Page
     MainPageComponent,
+    DynamicTitleComponent,
 
     // Components for Skills Page
     SkillsPageComponent,
@@ -70,6 +73,9 @@ function HttpLoaderFactory(httpClient: HttpClient) {
 
     // Components for Games Page
     GamesPageComponent,
+
+    // Components for Games Page
+    ContactPageComponent,
 
     // Shared Components
     CubeComponent,

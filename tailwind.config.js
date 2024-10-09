@@ -27,8 +27,8 @@ module.exports = {
         main: "#818285",
         light: "#E0E0E0",
       },
-      yellow: "#FFFF00",
-      purple: "#5D3FD3",
+      yellow: "#FFBF00",
+      purple: "#EABFFF",
     },
     fontFamily: {
       sans: ["Arial", "sans-serif", "Times New Roman"],

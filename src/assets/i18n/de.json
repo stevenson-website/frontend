@@ -3,7 +3,8 @@
     "navigation": {
       "feature-main": "HOME",
       "feature-skills": "MEINE SKILLS",
-      "feature-games": "PROJEKTE"
+      "feature-games": "PROJEKTE",
+      "feature-contact": "KONTAKT"
     },
     "pages": {
       "error": {
@@ -13,6 +14,11 @@
         "text": "Daran arbeiten wir gerade."
       }
     }
+  },
+  "feature-main": {
+    "text1": "Hallo und willkommen auf meiner Webseite. Mein Name ist Stephan Mandl. Ich bin Jurist und Software Entwickler und auf diesen Seiten könnt ihr mehr über mich erfahren.",
+    "text2": "Meine Spezialgebiete sind das Cloud und Platform Engineering sowie europäisches Datenschutz und IT-Recht. Mein großes Interesse ist technologischer Fortschritt und der Einfluss auf die Gesellschaft, den dieser mit sich bringt. Dabei interessiert mich sowohl die technische Komponente und der Versuch, durch Gesetzgebung die negativen Auswirkungen in den Griff zu bekommen.",
+    "text3": "Wenn Du dich gerne mit mir austauschen möchtest oder spezielle Fragen hast, nimm gerne Kontakt zu mir auf. Die diversen Möglichkeiten findest Du ebenfalls auf dieser Seite."
   },
   "feature-skills": {
     "skill-section": {

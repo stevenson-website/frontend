@@ -1,0 +1,9 @@
+.cursor {
+    display: inline-block;             /* Ensures the cursor behaves like text */
+    width: 10px;                      /* Width of the cursor */        /* Cursor color */
+    animation: blink 1.3s step-start infinite; /* Create the blinking animation */
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }   
+  }

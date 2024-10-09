@@ -5,6 +5,7 @@ import { UnderConstructionComponent } from 'src/app/pages/under-construction/und
 import { MainPageComponent } from 'src/features/feature-main-page/main-page/main-page.component';
 import { SkillsPageComponent } from 'src/features/feature-skills-page/skills-page/skills-page.component';
 import { GamesPageComponent } from 'src/features/feature-games-page/games-page/games-page.component';
+import { ContactPageComponent } from 'src/features/feature-contact/contact-page/contact-page.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'games',
     component: GamesPageComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactPageComponent,
   },
 ];
 
