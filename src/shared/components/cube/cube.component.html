@@ -1,15 +1,15 @@
-<canvas id="my-canvas"></canvas>
-
-<div
-  class="title"
-  [ngClass]="{
-      'text-md': cubeSize == 'SM',
-      'text-lg': cubeSize == 'MD',
-      'text-2xl': cubeSize == 'LG',
-    }"
->
-  <div class="flex-inline">
-    {{ description | translate }}
-    <mat-icon class="transform duration-300 rotate-180">rotate_right</mat-icon>
+<div>
+  <canvas id="my-canvas"></canvas>
+  <div class="ml-20 title">
+    <img
+      *ngIf="!(darkMode$ | async)"
+      class="w-auto h-20 transform duration-300 hover:scale-110"
+      src="/assets/pictures/icons/spin_me_arrow_up_dark.svg"
+    />
+    <img
+      *ngIf="darkMode$ | async"
+      class="w-auto h-20 transform duration-300 hover:scale-110"
+      src="/assets/pictures/icons/spin_me_arrow_up_light.svg"
+    />
   </div>
 </div>

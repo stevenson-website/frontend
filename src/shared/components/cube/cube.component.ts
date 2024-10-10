@@ -13,7 +13,6 @@ import { BehaviorSubject, skip, Subject, takeUntil } from 'rxjs';
 })
 export class CubeComponent implements OnInit {
   @Input() cubeSize: 'SM' | 'MD' | 'LG' = 'MD';
-  @Input() description: string = '';
 
   backgroundColors = {
     light: 0xffffff,
@@ -35,7 +34,11 @@ export class CubeComponent implements OnInit {
     height: number;
   };
 
+  darkMode$: BehaviorSubject<boolean>;
+
   constructor(private darkModeService: DarkModeService) {
+    this.darkMode$ = darkModeService.getBehaviorSubject();
+
     darkModeService
       .getBehaviorSubject()
       .pipe(takeUntil(this.destroy$), skip(1))
@@ -159,7 +162,7 @@ export class CubeComponent implements OnInit {
 
   letTheCubeAppearDynamically(): void {
     // Timeline
-    const timeline = gsap.timeline({ defaults: { duration: 3 } });
+    const timeline = gsap.timeline({ defaults: { duration: 2 } });
     timeline.fromTo(
       this.mesh.scale,
       { z: 0, x: 0, y: 0 },

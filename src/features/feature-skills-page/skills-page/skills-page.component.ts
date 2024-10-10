@@ -15,6 +15,11 @@ export class SkillsPageComponent {
     this.downScrollDeactivated$ = new BehaviorSubject<boolean>(false);
   }
 
+  scrollToTop() {
+    const skills = document.getElementById('skills');
+    skills?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   scrollUp() {
     const skills = document.getElementById('skills');
     const education = document.getElementById('education');

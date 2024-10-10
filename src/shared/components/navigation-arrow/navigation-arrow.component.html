@@ -1,5 +1,6 @@
-<div
+<button
   class="flex justify-center items-center rounded border transition duration-500 hover:text-white"
+  (click)="arrowPressed()"
   [ngClass]="{
     'text-primary-main hover:bg-primary-main': color === 'primary',
     'text-primary-second hover:bg-primary-second': color === 'second',
@@ -11,4 +12,4 @@
       ? "keyboard_double_arrow_down"
       : "keyboard_double_arrow_up"
   }}</mat-icon>
-</div>
+</button>

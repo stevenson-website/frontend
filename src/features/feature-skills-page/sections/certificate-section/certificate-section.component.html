@@ -1,20 +1,32 @@
-<div
-  class="p-5 md:p-20 grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center"
->
-  <certification-badge
-    [logo]="'/assets/pictures/skills/certs/cert_cloud_dev.png'"
-    [title]="'Google Cloud Professional Cloud Developer'"
-  />
-  <certification-badge
-    [logo]="'/assets/pictures/skills/certs/cert_database_eng.png'"
-    [title]="'Google Cloud Professional Database Engineer'"
-  />
-  <certification-badge
-    [logo]="'/assets/pictures/skills/certs/cert_terraform.png'"
-    [title]="'Terraform Associate (003)'"
-  />
-  <certification-badge
-    [logo]="'/assets/pictures/skills/certs/cert_cipp.png'"
-    [title]="'Certified International Privacy Professional Europe (CIPP/E)'"
-  />
+<div>
+  <div
+    class="p-5 md:p-20 grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center"
+  >
+    <certification-badge
+      [logo]="'/assets/pictures/skills/certs/cert_cloud_dev.png'"
+      [title]="'Google Cloud Professional Cloud Developer'"
+    />
+    <certification-badge
+      [logo]="'/assets/pictures/skills/certs/cert_database_eng.png'"
+      [title]="'Google Cloud Professional Database Engineer'"
+    />
+    <certification-badge
+      [logo]="'/assets/pictures/skills/certs/cert_terraform.png'"
+      [title]="'Terraform Associate (003)'"
+    />
+    <certification-badge
+      [logo]="'/assets/pictures/skills/certs/cert_cipp.png'"
+      [title]="'Certified International Privacy Professional Europe (CIPP/E)'"
+    />
+  </div>
+
+  <div class="flex justify-center mt-4">
+    <button>
+      <navigation-arrow
+        [color]="'primary'"
+        [direction]="'up'"
+        (arrowEvent)="arrowPressed()"
+      ></navigation-arrow>
+    </button>
+  </div>
 </div>

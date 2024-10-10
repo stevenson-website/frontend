@@ -8,9 +8,15 @@ import { DarkModeService } from 'src/app/services/darkmode.service';
   styleUrls: ['./education-section.component.css'],
 })
 export class EducationSectionComponent {
+  @Output() arrowEvent = new EventEmitter<void>();
+
   darkMode$: BehaviorSubject<boolean>;
 
   constructor(private darkModeService: DarkModeService) {
     this.darkMode$ = darkModeService.getBehaviorSubject();
+  }
+
+  arrowPressed() {
+    this.arrowEvent.emit();
   }
 }
