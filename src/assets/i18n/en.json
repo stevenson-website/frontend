@@ -3,7 +3,7 @@
     "navigation": {
       "feature-main": "HOME",
       "feature-skills": "MY SKILLS",
-      "feature-games": "PROJECTS",
+      "feature-projects": "PROJECTS",
       "feature-contact": "CONTACT"
     },
     "pages": {
@@ -63,7 +63,7 @@
       }
     }
   },
-  "feature-games": {
+  "feature-projects": {
     "cube-text": "Spin me"
   }
 }

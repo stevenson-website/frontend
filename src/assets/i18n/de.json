@@ -3,7 +3,7 @@
     "navigation": {
       "feature-main": "HOME",
       "feature-skills": "MEINE SKILLS",
-      "feature-games": "PROJEKTE",
+      "feature-projects": "PROJEKTE",
       "feature-contact": "KONTAKT"
     },
     "pages": {
@@ -63,7 +63,7 @@
       }
     }
   },
-  "feature-games": {
+  "feature-projects": {
     "cube-text": "Dreh mich"
   }
 }

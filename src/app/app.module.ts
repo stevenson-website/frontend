@@ -38,7 +38,7 @@ import { SkillSectionComponent } from 'src/features/feature-skills-page/sections
 import { NavigationArrowComponent } from 'src/shared/components/navigation-arrow/navigation-arrow.component';
 import { EducationCardComponent } from 'src/features/feature-skills-page/components/education-card/education-card.component';
 import { EducationLogoComponent } from 'src/features/feature-skills-page/components/education-logo/education-logo.component';
-import { GamesPageComponent } from 'src/features/feature-games-page/games-page/games-page.component';
+import { ProjectsPageComponent } from 'src/features/feature-projects-page/projects-page/projects-page.component';
 import { DynamicTitleComponent } from 'src/features/feature-main-page/components/dynamic-title/dynamic-title.component';
 import { ContactPageComponent } from 'src/features/feature-contact/contact-page/contact-page.component';
 
@@ -71,10 +71,10 @@ function HttpLoaderFactory(httpClient: HttpClient) {
     SkillCardComponent,
     CertificationBadgeComponent,
 
-    // Components for Games Page
-    GamesPageComponent,
+    // Components for Projects Page
+    ProjectsPageComponent,
 
-    // Components for Games Page
+    // Components for Contact Page
     ContactPageComponent,
 
     // Shared Components

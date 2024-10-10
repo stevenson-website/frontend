@@ -4,7 +4,7 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { UnderConstructionComponent } from 'src/app/pages/under-construction/under-construction.component';
 import { MainPageComponent } from 'src/features/feature-main-page/main-page/main-page.component';
 import { SkillsPageComponent } from 'src/features/feature-skills-page/skills-page/skills-page.component';
-import { GamesPageComponent } from 'src/features/feature-games-page/games-page/games-page.component';
+import { ProjectsPageComponent } from 'src/features/feature-projects-page/projects-page/projects-page.component';
 import { ContactPageComponent } from 'src/features/feature-contact/contact-page/contact-page.component';
 
 const routes: Routes = [
@@ -25,8 +25,8 @@ const routes: Routes = [
     component: SkillsPageComponent,
   },
   {
-    path: 'games',
-    component: GamesPageComponent,
+    path: 'projects',
+    component: ProjectsPageComponent,
   },
   {
     path: 'contact',

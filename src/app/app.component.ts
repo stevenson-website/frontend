@@ -26,16 +26,12 @@ export class AppComponent {
   registerNavigationRoutes() {
     this.navigationRoutes.push(
       {
-        path: '',
-        translationName: 'app.navigation.feature-main',
-      },
-      {
         path: 'skills',
         translationName: 'app.navigation.feature-skills',
       },
       {
-        path: 'games',
-        translationName: 'app.navigation.feature-games',
+        path: 'projects',
+        translationName: 'app.navigation.feature-projects',
       },
       {
         path: 'contact',
