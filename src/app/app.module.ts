@@ -41,6 +41,8 @@ import { EducationLogoComponent } from 'src/features/feature-skills-page/compone
 import { ProjectsPageComponent } from 'src/features/feature-projects-page/projects-page/projects-page.component';
 import { DynamicTitleComponent } from 'src/features/feature-main-page/components/dynamic-title/dynamic-title.component';
 import { ContactPageComponent } from 'src/features/feature-contact/contact-page/contact-page.component';
+import { ProjectCardComponent } from 'src/features/feature-projects-page/components/project-card/project-card.component';
+import { ProjectCardHolderComponent } from 'src/features/feature-projects-page/components/project-card-holder/project-card-holder.component';
 
 registerLocaleData(localeDE);
 
@@ -73,6 +75,8 @@ function HttpLoaderFactory(httpClient: HttpClient) {
 
     // Components for Projects Page
     ProjectsPageComponent,
+    ProjectCardComponent,
+    ProjectCardHolderComponent,
 
     // Components for Contact Page
     ContactPageComponent,

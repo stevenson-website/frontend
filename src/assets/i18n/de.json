@@ -63,5 +63,14 @@
       }
     }
   },
-  "feature-projects": {}
+  "feature-projects": {
+    "memory": {
+      "title": "Memory",
+      "description": "Trainiere dein Hirn mit diesem netten Memory. Ob alleine oder gegen einen Freund."
+    },
+    "further": {
+      "title": "In Arbeit",
+      "description": "Weitere Projekte sind am Entstehen..."
+    }
+  }
 }

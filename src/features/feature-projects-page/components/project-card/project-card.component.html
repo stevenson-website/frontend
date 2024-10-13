@@ -1,0 +1,22 @@
+<div
+  class="flex flex-col items-center bg-opacity-50 border rounded w-64 h-64 sm:w-72 md:w-96 md:h-80"
+  [ngClass]="{
+    'bg-background-dark border-white text-white': (darkMode$ | async),
+    'bg-white border-background-dark text-background-dark': !(darkMode$ | async)
+  }"
+>
+  <div class="mt-4 font-bold text-lg md:text-xl">
+    {{ title | translate }}
+  </div>
+  <div class="mt-4 md:mt-10">
+    <a href="{{ link }}" target="_blank" rel="noopener noreferrer">
+      <img
+        class="w-36 h-auto md:w-56 transform duration-300 hover:scale-110"
+        src="{{ imagePath }}"
+      />
+    </a>
+  </div>
+  <div class="text-center mt-6 mx-4">
+    {{ description | translate }}
+  </div>
+</div>

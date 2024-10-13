@@ -1,18 +1,9 @@
 <div class="pt-header"></div>
 
-<div class="grid grid-cols-1 sm:grid-cols-2">
-  <cube [cubeSize]="'SM'"></cube>
+<div class="grid grid-cols-1 md:grid-cols-3">
+  <cube [cubeSize]="'SM'" class="border-r-2"></cube>
 
-  <div class="flex justify-center">
-    <a
-      href="https://elaborate-heliotrope-c71613.netlify.app"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        class="w-auto h-48 md:h-60 transform duration-300 hover:scale-110"
-        src="/assets/pictures/other/poke_game.png"
-      />
-    </a>
+  <div class="flex justify-center md:col-span-2">
+    <project-card-holder [projects]="projects"></project-card-holder>
   </div>
 </div>

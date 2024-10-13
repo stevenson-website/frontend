@@ -63,5 +63,14 @@
       }
     }
   },
-  "feature-projects": {}
+  "feature-projects": {
+    "memory": {
+      "title": "Memory",
+      "description": "Train your brain! Play this memory: on your own or with a friend."
+    },
+    "further": {
+      "title": "Under construction",
+      "description": "More projects are on the way..."
+    }
+  }
 }

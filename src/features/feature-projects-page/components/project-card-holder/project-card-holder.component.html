@@ -1,0 +1,8 @@
+<ng-container *ngFor="let project of projects">
+  <project-card
+    [title]="project.title"
+    [description]="project.description"
+    [imagePath]="project.imagePath"
+    [link]="project.link"
+  ></project-card>
+</ng-container>
