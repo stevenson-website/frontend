@@ -1,6 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-import { DarkModeService } from 'src/app/services/darkmode.service';
 
 @Component({
   selector: 'project-card',
@@ -13,9 +11,5 @@ export class ProjectCardComponent {
   @Input() imagePath: string = '';
   @Input() link: string = '';
 
-  darkMode$: BehaviorSubject<boolean>;
-
-  constructor(private darkModeService: DarkModeService) {
-    this.darkMode$ = darkModeService.getBehaviorSubject();
-  }
+  constructor() {}
 }

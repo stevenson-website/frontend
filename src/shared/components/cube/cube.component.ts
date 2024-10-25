@@ -80,19 +80,51 @@ export class CubeComponent implements OnInit {
 
     //   Material
     const textureLoader = new THREE.TextureLoader();
-    const catTexture = textureLoader.load('assets/pictures/cube/cat.jpg');
-    const catPicMaterial = new THREE.MeshBasicMaterial({ map: catTexture });
-    const personTexture = textureLoader.load('assets/pictures/cube/person.jpg');
-    const personPicMaterial = new THREE.MeshBasicMaterial({
-      map: personTexture,
+
+    const penguinBackTexture = textureLoader.load(
+      'assets/pictures/cube/penguin_back.jpg'
+    );
+    const penguinBackMaterial = new THREE.MeshBasicMaterial({
+      map: penguinBackTexture,
     });
+    const penguinFrontTexture = textureLoader.load(
+      'assets/pictures/cube/penguin_front.jpg'
+    );
+    const penguinFrontMaterial = new THREE.MeshBasicMaterial({
+      map: penguinFrontTexture,
+    });
+    const penguinRightTexture = textureLoader.load(
+      'assets/pictures/cube/penguin_right.jpg'
+    );
+    const penguinRightMaterial = new THREE.MeshBasicMaterial({
+      map: penguinRightTexture,
+    });
+    const penguinLeftTexture = textureLoader.load(
+      'assets/pictures/cube/penguin_left.jpg'
+    );
+    const penguinLeftMaterial = new THREE.MeshBasicMaterial({
+      map: penguinLeftTexture,
+    });
+    const penguinTopTexture = textureLoader.load(
+      'assets/pictures/cube/penguin_top.jpg'
+    );
+    const penguinTopMaterial = new THREE.MeshBasicMaterial({
+      map: penguinTopTexture,
+    });
+    const penguinBottomTexture = textureLoader.load(
+      'assets/pictures/cube/penguin_bottom.jpg'
+    );
+    const penguinBottomMaterial = new THREE.MeshBasicMaterial({
+      map: penguinBottomTexture,
+    });
+
     const materials = [
-      new THREE.MeshBasicMaterial({ color: 0xffffff }), // Right side
-      new THREE.MeshBasicMaterial({ color: 0xc5a54e }), // Left side
-      new THREE.MeshBasicMaterial({ color: 0xb6b2be }), // Top side
-      new THREE.MeshBasicMaterial({ color: 0xffffff }), // Bottom side
-      personPicMaterial,
-      catPicMaterial, // Back side
+      penguinRightMaterial, // Right side
+      penguinLeftMaterial, // Left side
+      penguinTopMaterial, // Top side
+      penguinBottomMaterial, // Bottom side
+      penguinFrontMaterial, // Front side
+      penguinBackMaterial, // Back side
     ];
 
     //    Mesh

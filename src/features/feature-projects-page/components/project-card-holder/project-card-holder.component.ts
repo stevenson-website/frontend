@@ -1,5 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { Project } from '../../model/project';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
+import { BehaviorSubject } from 'rxjs';
+import { DarkModeService } from 'src/app/services/darkmode.service';
 
 @Component({
   selector: 'project-card-holder',
@@ -8,6 +11,30 @@ import { Project } from '../../model/project';
 })
 export class ProjectCardHolderComponent {
   @Input() projects: Project[] = [];
+  darkMode$: BehaviorSubject<boolean>;
 
-  constructor() {}
+  constructor(private darkModeService: DarkModeService) {
+    this.darkMode$ = darkModeService.getBehaviorSubject();
+  }
+
+  // When removing this carousel remove also the packages "jquery", "ngx-slick-carousel" and "slick-carousel"
+  @ViewChild('slickModal') slickModal!: SlickCarouselComponent;
+
+  slideIndex = 0;
+  slideConfig = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+  };
+
+  goToNextCard() {
+    console.log('here');
+
+    if (this.slickModal) {
+      {
+        this.slideIndex = (this.slideIndex + 1) % this.projects.length;
+        this.slickModal.slickGoTo(this.slideIndex);
+      }
+    }
+  }
 }

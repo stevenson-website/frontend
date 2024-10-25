@@ -6,6 +6,7 @@ import {
 } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -93,6 +94,7 @@ function HttpLoaderFactory(httpClient: HttpClient) {
     HttpClientModule,
     MaterialModule,
     SharedModule,
+    SlickCarouselModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {
