@@ -28,8 +28,6 @@ export class ProjectCardHolderComponent {
   };
 
   goToNextCard() {
-    console.log('here');
-
     if (this.slickModal) {
       {
         this.slideIndex = (this.slideIndex + 1) % this.projects.length;
