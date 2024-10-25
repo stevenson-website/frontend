@@ -9,7 +9,7 @@ export class DynamicTitleComponent implements OnInit {
   texts: string[] = [
     "Hi, I'm Stephan",
     'Software Engineer',
-    'Privacy Enthusiast',
+    'Privacy Professional',
     'Retired Lawyer',
   ];
   deleting: boolean = false;
