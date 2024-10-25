@@ -29,6 +29,7 @@ module.exports = {
       },
       yellow: "#FFBF00",
       purple: "#EABFFF",
+      linkedin: "#0288D1",
     },
     fontFamily: {
       sans: ["Arial", "sans-serif", "Times New Roman"],
