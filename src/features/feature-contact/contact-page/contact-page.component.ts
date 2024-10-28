@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-page.component.css'],
 })
 export class ContactPageComponent {
+  email: string = 'john.doe@email.com';
+
   constructor() {}
 }
