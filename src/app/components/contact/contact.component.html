@@ -1,0 +1,84 @@
+<div
+  *ngIf="emailIsTriggered"
+  class="transition-opacity duration-1000"
+  [ngClass]="{
+    'opacity-0': !emailIsVisible,
+    'opacity-100': emailIsVisible,
+  }"
+>
+  <div
+    class="px-2 py-1 border-2 rounded border-opacity-80 hover:border-opacity-100 select-none border-primary-main"
+    [ngClass]="{
+    'bg-background-dark text-white': (darkMode$|async),
+    'bg-white text-background-dark': !(darkMode$|async),
+    }"
+  >
+    <div class="flex items-center">
+      <button class="mt-2">
+        <mat-icon
+          class="hover:text-primary-main text-sm"
+          (click)="copyEmail()"
+          >{{ emailIsCopied ? "check" : "content_copy" }}</mat-icon
+        >
+      </button>
+      <div class="px-2">
+        {{ email }}
+      </div>
+      <button class="mt-2" (click)="makeEmailInvisible()">
+        <mat-icon class="hover:text-primary-main text-sm" (click)="copyEmail()"
+          >close</mat-icon
+        >
+      </button>
+    </div>
+  </div>
+</div>
+<div
+  *ngIf="!emailIsTriggered"
+  class="flex items-center transition-opacity duration-1000"
+  [ngClass]="{
+  'opacity-0': emailIsVisible,
+  'opacity-100': !emailIsVisible,
+}"
+>
+  <a
+    class="pr-4 md:pr-2"
+    href="https://linkedin.com/in/stephan-mandl"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg
+      class="w-6 h-auto text-gray-main hover:text-linkedin transform duration-500"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="6 6 36 36"
+      width="200px"
+      height="200px"
+    >
+      <path
+        fill="currentColor"
+        d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
+      />
+      <path
+        fill="#FFF"
+        d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"
+      />
+    </svg>
+  </a>
+  <button (click)="makeEmailVisible()">
+    <svg
+      class="w-5 h-auto text-gray-main hover:text-primary-main transform duration-500"
+      width="200px"
+      height="140px"
+      viewBox="5 5 14 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4 7L10.94 11.3375C11.5885 11.7428 12.4115 11.7428 13.06 11.3375L20 7M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+</div>

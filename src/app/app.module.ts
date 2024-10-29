@@ -44,6 +44,7 @@ import { DynamicTitleComponent } from 'src/features/feature-main-page/components
 import { ContactPageComponent } from 'src/features/feature-contact/contact-page/contact-page.component';
 import { ProjectCardComponent } from 'src/features/feature-projects-page/components/project-card/project-card.component';
 import { ProjectCardHolderComponent } from 'src/features/feature-projects-page/components/project-card-holder/project-card-holder.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 registerLocaleData(localeDE);
 
@@ -59,6 +60,7 @@ function HttpLoaderFactory(httpClient: HttpClient) {
     HeaderComponent,
     FooterComponent,
     DrawerComponent,
+    ContactComponent,
 
     // Components for Main Page
     MainPageComponent,

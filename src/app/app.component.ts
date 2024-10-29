@@ -32,10 +32,6 @@ export class AppComponent {
       {
         path: 'projects',
         translationName: 'app.navigation.feature-projects',
-      },
-      {
-        path: 'contact',
-        translationName: 'app.navigation.feature-contact',
       }
     );
   }
