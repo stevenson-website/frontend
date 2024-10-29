@@ -3,12 +3,17 @@
     {{ title | translate }}
   </div>
   <div class="mt-4 md:mt-10">
-    <a href="{{ link }}" target="_blank" rel="noopener noreferrer">
+    <a *ngIf="link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
       <img
         class="w-36 h-auto md:w-56 transform duration-300 hover:scale-110"
         src="{{ imagePath }}"
       />
     </a>
+    <img
+      *ngIf="!link"
+      class="w-36 h-auto md:w-56 transform duration-300 hover:scale-110"
+      src="{{ imagePath }}"
+    />
   </div>
   <div class="text-center mt-6 mx-4">
     {{ description | translate }}

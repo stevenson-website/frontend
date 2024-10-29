@@ -15,21 +15,9 @@ export class ProjectsPageComponent {
       link: 'https://elaborate-heliotrope-c71613.netlify.app/',
     },
     {
-      title: 'feature-projects.memory.title',
-      description: 'feature-projects.memory.description',
-      imagePath: '/assets/pictures/other/poke_game.png',
-      link: 'https://elaborate-heliotrope-c71613.netlify.app/',
-    },
-    {
       title: 'feature-projects.further.title',
       description: 'feature-projects.further.description',
       imagePath: '/assets/pictures/other/construction.svg',
-      link: '',
-    },
-    {
-      title: 'feature-projects.further.title',
-      description: 'feature-projects.further.description',
-      imagePath: '/assets/pictures/other/laptop.png',
       link: '',
     },
   ];

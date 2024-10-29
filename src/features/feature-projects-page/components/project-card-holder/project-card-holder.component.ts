@@ -24,15 +24,5 @@ export class ProjectCardHolderComponent {
   slideConfig = {
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
   };
-
-  goToNextCard() {
-    if (this.slickModal) {
-      {
-        this.slideIndex = (this.slideIndex + 1) % this.projects.length;
-        this.slickModal.slickGoTo(this.slideIndex);
-      }
-    }
-  }
 }

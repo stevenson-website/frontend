@@ -1,32 +1,9 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="800px" height="800px" viewBox="0 0 400 400" fill="none"
-    xmlns="http://www.w3.org/2000/svg">
-    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-    <g id="SVGRepo_iconCarrier">
-        <path opacity="0.503384"
-            d="M218 114C207.781 109.763 154.466 96.9807 154.003 84.1942C153.821 79.1711 163.082 56.6235 198.713 64.7485C220.618 69.7438 218.862 91.1757 216.415 100.38C215.24 104.802 209.03 107.489 206.47 111.291"
-            stroke="#d9bd9e" stroke-opacity="0.9" stroke-width="14" stroke-linecap="round"
-            stroke-linejoin="round" />
-        <path d="M201 117.298C184.868 158.187 136.401 145.476 150.559 100" stroke="#ee7383"
-            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
-        <path
-            d="M148 160C142.818 180.198 139.446 255.845 132.989 271.659C125.3 290.488 106.806 314.605 94 330.289L104.368 338"
-            stroke="#ee7383" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"
-            stroke-linejoin="round" />
-        <path
-            d="M192 337.972C190.266 338.205 176.583 336.923 175.993 336.548C175.402 336.172 175.993 256.168 159 223.477L169.475 163"
-            stroke="#ee7383" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"
-            stroke-linejoin="round" />
-        <path d="M146 159.005C102.339 158.613 92.0143 182.286 137.795 202" stroke="#ee7383"
-            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M172 165C186.105 183.05 196.892 207.331 211 224" stroke="#ee7383"
-            stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M96 203C150.657 211.5 190.692 213.45 245 220" stroke="#d0d4db" stroke-opacity="0.9"
-            stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
-        <path
-            d="M258.602 205.264C258.59 210.596 247.596 234.326 252.071 238.962C267.089 254.519 327.744 243.246 297.814 215.374C289.444 207.58 275.964 204.476 261.737 203"
-            stroke="#d9bd9e" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"
-            stroke-linejoin="round" />
-    </g>
+<svg fill="#ee7383" width="200px" height="100px" viewBox="0 -8 72 72" id="Layer_1"
+    data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+    <title>construction</title>
+    <path
+        d="M27.69,34.62l-4.85-7.84.37-.36,1.6,1.37a1.5,1.5,0,0,0,.53,1.93,1.54,1.54,0,0,0,.81.23,1.49,1.49,0,0,0,.87-.27L37,38.2a.62.62,0,0,0,.44.18.64.64,0,0,0,.47-.21.65.65,0,0,0,0-.91L27.8,28.66l5-7.88a1.49,1.49,0,0,0,0-1.62,2.26,2.26,0,0,0-.25-.29L26.74,12a1.5,1.5,0,0,0-1.24-.66h0l-7.67.07a1.22,1.22,0,0,0-1.07.69l-2.37,5.09-.63-.54a.63.63,0,0,0-.9,0,.64.64,0,0,0,0,.91l.93.8-.24.53a1.52,1.52,0,0,0,.59,2,1.42,1.42,0,0,0,.74.2,1.51,1.51,0,0,0,1.27-.7l.78.67L13.4,24.87a2.37,2.37,0,0,0-.76,1.66l-.26,8.58L10.05,45.19A2.35,2.35,0,0,0,11.81,48a2.48,2.48,0,0,0,.54.06,2.35,2.35,0,0,0,2.29-1.83l2.44-10.53.23-7.63,1.4,1,4,6.49-4.38,9.15a2.35,2.35,0,1,0,4.25,2L27.76,36A1.37,1.37,0,0,0,27.69,34.62Z" />
+    <circle cx="33.46" cy="12.22" r="4.3" />
+    <path
+        d="M61.39,45.33c-1.44-2.1-8.34-15.16-10.12-17s-3.36-2.08-4.44-1.64a6.94,6.94,0,0,0-3,2.24c-1.27,1.73-3,6.91-4.44,9.23a11.08,11.08,0,0,0-.8,1l-.08.06c-1.06.64-4,1.19-5.19,2.4a15.63,15.63,0,0,0-1.92,2.6l-.18.25a8.22,8.22,0,0,1-3.93,3.27l0,.32H60.43C60.66,48.08,63.15,47.9,61.39,45.33Z" />
 </svg>
