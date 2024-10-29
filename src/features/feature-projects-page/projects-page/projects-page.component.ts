@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Project } from '../model/project';
+import { BehaviorSubject } from 'rxjs';
+import { DarkModeService } from 'src/app/services/darkmode.service';
 
 @Component({
   selector: 'projects-page',
@@ -7,6 +9,8 @@ import { Project } from '../model/project';
   styleUrls: ['./projects-page.component.css'],
 })
 export class ProjectsPageComponent {
+  darkMode$: BehaviorSubject<boolean>;
+
   projects: Project[] = [
     {
       title: 'feature-projects.memory.title',
@@ -22,5 +26,7 @@ export class ProjectsPageComponent {
     },
   ];
 
-  constructor() {}
+  constructor(private darkModeService: DarkModeService) {
+    this.darkMode$ = darkModeService.getBehaviorSubject();
+  }
 }
