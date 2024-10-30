@@ -9,7 +9,7 @@ import { Clipboard } from '@angular/cdk/clipboard';
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent {
-  email = 'john.doe@email.com';
+  email = 'info@smandl.com';
 
   emailIsTriggered: boolean = false;
   emailIsVisible: boolean = false;
