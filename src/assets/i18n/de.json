@@ -17,15 +17,15 @@
   },
   "feature-main": {
     "text1": "Hallo und willkommen auf meiner Webseite. Mein Name ist Stephan Mandl. Ich bin Jurist und Software Entwickler und auf diesen Seiten könnt ihr mehr über mich erfahren.",
-    "text2": "Meine Spezialgebiete sind das Cloud und Platform Engineering sowie europäisches Datenschutz und IT-Recht. Mein großes Interesse ist technologischer Fortschritt und der Einfluss auf die Gesellschaft, den dieser mit sich bringt. Dabei interessiert mich sowohl die technische Komponente und der Versuch, durch Gesetzgebung die negativen Auswirkungen in den Griff zu bekommen.",
+    "text2": "Meine Spezialgebiete sind das Cloud und Platform Engineering sowie europäisches Datenschutz und IT-Recht. Mein großes Interesse ist technologischer Fortschritt und der Einfluss auf die Gesellschaft, den dieser mit sich bringt. Dabei interessiert mich sowohl die technische Komponente als auch der Versuch, durch Gesetzgebung die negativen Auswirkungen in den Griff zu bekommen.",
     "text3": "Wenn Du dich gerne mit mir austauschen möchtest oder spezielle Fragen hast, nimm gerne Kontakt zu mir auf. Die diversen Möglichkeiten findest Du ebenfalls auf dieser Seite."
   },
   "feature-skills": {
     "skill-section": {
       "frontend": {
         "title": "Frontend",
-        "js-ts": "JavaScript/TypeScript",
-        "html": "HTML",
+        "angular": "Angular",
+        "html": "HTML/CSS",
         "tailwind": "Tailwind"
       },
       "backend": {
@@ -40,13 +40,12 @@
         "gcp": "Google Cloud Platform",
         "terraform": "Terraform",
         "gh": "GitHub",
-        "ci-cd": "CI/CD",
-        "packer": "HashiCorp Packer"
+        "ci-cd": "CI/CD"
       },
       "legal": {
         "title": "Rechtsgebiete",
         "privacy": "Datenschutzrecht",
-        "it": "IT-Recht",
+        "it": "IT/IP-Recht und Compliance",
         "tele": "Telekommunikationsrecht"
       }
     },
@@ -54,12 +53,12 @@
       "law": {
         "title": "Rechtswissenschaften (Mag. iur.)",
         "date": "Abschluss 2020",
-        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+        "text": "Das traditionelle Studium der Rechtswissenschaften in Österreich endet mit einem Magister-Titel, der in etwa einem Master-Abschluss entspricht. Ich habe mich in meinem Studium auf Rechtsfragen im Bereich der Informationstechnologie fokusiert, darunter unter anderem auf Datenschutzrecht, Telekommunikationsrecht, IP und IT-Recht, E-Commerce, sowie Internet- und Domainstreitigkeiten."
       },
       "cs": {
         "title": "Wirtschaftsinformatik (B.Sc.)",
         "date": "Abschluss 2023",
-        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+        "text": "Der Bachelorstudiengang Wirtschaftsinformatik befasst sich mit der Anwendung, Gestaltung und Entwicklung von Informations- und Kommunikationssystemen und deren Einsatz in Unternehmen."
       }
     }
   },

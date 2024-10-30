@@ -10,7 +10,8 @@ export class DynamicTitleComponent implements OnInit {
     "Hi, I'm Stephan",
     'Software Engineer',
     'Privacy Professional',
-    'Retired Lawyer',
+    'Former IT-Lawyer',
+    'Cat Person',
   ];
   deleting: boolean = false;
   displayedText: string = '';

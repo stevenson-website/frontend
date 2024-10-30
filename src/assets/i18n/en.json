@@ -16,16 +16,16 @@
     }
   },
   "feature-main": {
-    "text1": "Hallo und willkommen auf meiner Webseite. Mein Name ist Stephan Mandl. Ich bin Jurist und Software Entwickler und auf diesen Seiten könnt ihr mehr über mich erfahren.",
-    "text2": "Meine Spezialgebiete sind das Cloud und Platform Engineering sowie europäisches Datenschutz und IT-Recht. Mein großes Interesse ist technologischer Fortschritt und der Einfluss auf die Gesellschaft, den dieser mit sich bringt. Dabei interessiert mich sowohl die technische Komponente und der Versuch, durch Gesetzgebung die negativen Auswirkungen in den Griff zu bekommen.",
-    "text3": "Wenn Du dich gerne mit mir austauschen möchtest oder spezielle Fragen hast, nimm gerne Kontakt zu mir auf. Die diversen Möglichkeiten findest Du ebenfalls auf dieser Seite."
+    "text1": "Hello and welcome to my website. My name is Stephan Mandl. I am a lawyer and software developer and on these pages you can find out more about me.",
+    "text2": "I specialize in cloud/platform engineering and DevOps as well as European data protection and IT law. My main interest is technological progress and the impact it has on society. I am interested in both the technical component and the attempt to tackle the negative effects through legislation.",
+    "text3": "If you would like to talk to me or have specific questions, please feel free to contact me. You can find the ways to get in contact on this page."
   },
   "feature-skills": {
     "skill-section": {
       "frontend": {
         "title": "Frontend",
-        "js-ts": "JavaScript/TypeScript",
-        "html": "HTML",
+        "angular": "Angular",
+        "html": "HTML/CSS",
         "tailwind": "Tailwind"
       },
       "backend": {
@@ -40,25 +40,24 @@
         "gcp": "Google Cloud Platform",
         "terraform": "Terraform",
         "gh": "GitHub",
-        "ci-cd": "CI/CD",
-        "packer": "HashiCorp Packer"
+        "ci-cd": "CI/CD"
       },
       "legal": {
         "title": "Fields of Law",
-        "privacy": "Data Protection Law",
-        "it": "IT Law",
+        "privacy": "Privacy Law",
+        "it": "IT/IP Law and Compliance",
         "tele": "Telecommunications Law"
       },
       "education-section": {
         "law": {
           "title": "Law (Mag. iur.)",
           "date": "Graduation 2020",
-          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+          "text": "The traditional law degree in Austria ends with a degree equivalent to a Master's degree. I focused my studies on legal issues in the field of information technology which includes data protection law, telecommunications law, IP and IT law, e-commerce, internet and domain disputes and more."
         },
         "cs": {
           "title": "Business Informatics (B.Sc.)",
           "date": "Graduation 2023",
-          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. "
+          "text": "The bachelor's program Business Informatics deals with the application, design and development of information and communication systems and their implementation in companies."
         }
       }
     }

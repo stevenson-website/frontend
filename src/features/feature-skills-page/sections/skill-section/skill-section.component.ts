@@ -22,14 +22,13 @@ export class SkillSectionComponent implements AfterViewInit {
         'feature-skills.skill-section.infra.terraform',
         'feature-skills.skill-section.infra.gh',
         'feature-skills.skill-section.infra.ci-cd',
-        'feature-skills.skill-section.infra.packer',
       ],
     },
     {
       title: 'feature-skills.skill-section.frontend.title',
       icon: 'devices',
       skillList: [
-        'feature-skills.skill-section.frontend.js-ts',
+        'feature-skills.skill-section.frontend.angular',
         'feature-skills.skill-section.frontend.html',
         'feature-skills.skill-section.frontend.tailwind',
       ],
