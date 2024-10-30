@@ -16,7 +16,7 @@ export class ProjectsPageComponent {
       title: 'feature-projects.memory.title',
       description: 'feature-projects.memory.description',
       imagePath: '/assets/pictures/other/poke_game.png',
-      link: 'https://elaborate-heliotrope-c71613.netlify.app/',
+      link: 'https://memory.smandl.com/',
     },
     {
       title: 'feature-projects.further.title',
