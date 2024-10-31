@@ -1,4 +1,10 @@
-<div class="flex justify-between h-header fixed w-full top-0 z-10">
+<div
+  class="flex justify-between h-header fixed w-full top-0 z-10 lg:bg-opacity-0"
+  [ngClass]="{
+    'bg-background-dark': darkMode$ | async,
+    'bg-background-light': !(darkMode$ | async)
+  }"
+>
   <div class="flex justify-start">
     <button class="ml-4 mt-4" (click)="goToMainPage()">
       <img
