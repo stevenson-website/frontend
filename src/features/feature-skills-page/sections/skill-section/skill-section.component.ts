@@ -48,6 +48,7 @@ export class SkillSectionComponent implements AfterViewInit {
       icon: 'gavel',
       skillList: [
         'feature-skills.skill-section.legal.privacy',
+        'feature-skills.skill-section.legal.gdpr',
         'feature-skills.skill-section.legal.it',
         'feature-skills.skill-section.legal.tele',
       ],

@@ -45,6 +45,7 @@
       "legal": {
         "title": "Rechtsgebiete",
         "privacy": "Datenschutzrecht",
+        "gdpr": "DSGVO",
         "it": "IT/IP-Recht und Compliance",
         "tele": "Telekommunikationsrecht"
       }
