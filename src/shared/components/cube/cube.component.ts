@@ -164,14 +164,10 @@ export class CubeComponent implements OnInit {
     // Renderer
     const canvas = document.getElementById('my-canvas') as HTMLCanvasElement;
 
-    const renderer = new THREE.WebGLRenderer({ canvas });
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
     renderer.setSize(this.sizes.width, this.sizes.height);
     renderer.setPixelRatio(2);
-    renderer.setClearColor(
-      this.darkModeService.getBehaviorSubject().getValue()
-        ? this.backgroundColors.dark
-        : this.backgroundColors.light
-    );
+    renderer.setClearColor(0x000000, 0);
     renderer.render(this.scene, this.camera);
 
     // Controls
