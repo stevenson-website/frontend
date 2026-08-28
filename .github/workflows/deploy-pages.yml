@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --configuration=production --base-href ./
+        run: npm run build:pages
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "format": "nx format",
-    "serve": "ng serve --configuration=production",
+    "serve": "ng serve --configuration=development",
+    "serve:prod": "ng serve --configuration=production",
     "serve:wiremock": "ng serve --configuration=development",
     "build": "ng build",
+    "build:pages": "ng build --configuration=production --base-href ./",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
