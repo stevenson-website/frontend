@@ -15,13 +15,13 @@ export class ProjectsPageComponent {
     {
       title: 'feature-projects.memory.title',
       description: 'feature-projects.memory.description',
-      imagePath: '/assets/pictures/other/poke_game.png',
+      imagePath: 'assets/pictures/other/poke_game.png',
       link: 'https://memory.smandl.com/',
     },
     {
       title: 'feature-projects.further.title',
       description: 'feature-projects.further.description',
-      imagePath: '/assets/pictures/other/construction.svg',
+      imagePath: 'assets/pictures/other/construction.svg',
       link: '',
     },
   ];

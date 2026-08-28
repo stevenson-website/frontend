@@ -10,12 +10,12 @@
       <img
         *ngIf="darkMode$ | async"
         class="w-auto h-20 transform duration-300 hover:scale-110"
-        src="/assets/pictures/icons/home_dark.svg"
+        src="assets/pictures/icons/home_dark.svg"
       />
       <img
         *ngIf="!(darkMode$ | async)"
         class="w-auto h-20 transform duration-300 hover:scale-110"
-        src="/assets/pictures/icons/home_light.svg"
+        src="assets/pictures/icons/home_light.svg"
       />
     </button>
 
@@ -33,12 +33,12 @@
       <img
         class="h-5 w-auto"
         *ngIf="darkMode$ | async"
-        src="/assets/pictures/icons/arrow_light.svg"
+        src="assets/pictures/icons/arrow_light.svg"
       />
       <img
         class="h-5 w-auto"
         *ngIf="!(darkMode$ | async)"
-        src="/assets/pictures/icons/arrow_dark.svg"
+        src="assets/pictures/icons/arrow_dark.svg"
       />
     </div>
   </div>
@@ -71,7 +71,7 @@
         [ngClass]="{
           rotated: hamburgerMenuTilted
         }"
-        src="./../../../assets/pictures/icons/hamburger_menu.svg"
+        src="assets/pictures/icons/hamburger_menu.svg"
       />
     </button>
   </div>
