@@ -49,7 +49,7 @@ import { ContactComponent } from './components/contact/contact.component';
 registerLocaleData(localeDE);
 
 function HttpLoaderFactory(httpClient: HttpClient) {
-  return new TranslateHttpLoader(httpClient);
+  return new TranslateHttpLoader(httpClient, 'assets/i18n/', '.json');
 }
 
 @NgModule({
