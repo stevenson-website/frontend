@@ -13,6 +13,12 @@ export class ProjectsPageComponent {
 
   projects: Project[] = [
     {
+      title: 'feature-projects.immohistory.title',
+      description: 'feature-projects.immohistory.description',
+      imagePath: 'assets/pictures/other/immohistory.png',
+      link: 'https://immohistory.at/',
+    },
+    {
       title: 'feature-projects.memory.title',
       description: 'feature-projects.memory.description',
       imagePath: 'assets/pictures/other/poke_game.png',

@@ -64,6 +64,10 @@
     }
   },
   "feature-projects": {
+    "immohistory": {
+      "title": "Immohistory.at",
+      "description": "A platform for tracking Austrian real estate prices and their trends."
+    },
     "memory": {
       "title": "Memory",
       "description": "Train your brain! Play this memory: on your own or with a friend."

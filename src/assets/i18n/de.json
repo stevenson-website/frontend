@@ -64,6 +64,10 @@
     }
   },
   "feature-projects": {
+    "immohistory": {
+      "title": "Immohistory.at",
+      "description": "Eine Plattform, auf der österreichische Immobilienpreise und deren Verlauf getrackt werden."
+    },
     "memory": {
       "title": "Memory",
       "description": "Trainiere dein Hirn mit diesem netten Memory. Ob alleine oder gegen einen Freund."
