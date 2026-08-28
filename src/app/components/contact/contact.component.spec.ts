@@ -1,9 +1,11 @@
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { Clipboard } from '@angular/cdk/clipboard';
 
 import { ContactComponent } from './contact.component';
+import { DarkModeService } from 'src/app/services/darkmode.service';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
@@ -11,9 +13,23 @@ describe('ContactComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactComponent ]
-    })
-    .compileComponents();
+      declarations: [ContactComponent],
+      providers: [
+        {
+          provide: DarkModeService,
+          useValue: {
+            getBehaviorSubject: () => new BehaviorSubject<boolean>(true),
+          },
+        },
+        {
+          provide: Clipboard,
+          useValue: {
+            copy: () => {},
+          },
+        },
+      ],
+      schemas: [NO_ERRORS_SCHEMA],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

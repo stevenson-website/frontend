@@ -1,0 +1,22 @@
+<div class="flex items-center select-none">
+  <mat-icon class="text-gray-main text-base mr-1">language</mat-icon>
+  <button
+    class="text-xs hover:text-primary-main"
+    [ngClass]="{
+      'text-primary-main font-semibold': currentLanguage === 'en'
+    }"
+    (click)="changeLanguage('en')"
+  >
+    EN
+  </button>
+  <span class="px-1 text-gray-main">|</span>
+  <button
+    class="text-xs hover:text-primary-main"
+    [ngClass]="{
+      'text-primary-main font-semibold': currentLanguage === 'de'
+    }"
+    (click)="changeLanguage('de')"
+  >
+    DE
+  </button>
+</div>

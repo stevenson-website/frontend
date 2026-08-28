@@ -45,6 +45,7 @@ import { ContactPageComponent } from 'src/features/feature-contact/contact-page/
 import { ProjectCardComponent } from 'src/features/feature-projects-page/components/project-card/project-card.component';
 import { ProjectCardHolderComponent } from 'src/features/feature-projects-page/components/project-card-holder/project-card-holder.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { LanguageComponent } from './components/language/language.component';
 
 registerLocaleData(localeDE);
 
@@ -61,6 +62,7 @@ function HttpLoaderFactory(httpClient: HttpClient) {
     FooterComponent,
     DrawerComponent,
     ContactComponent,
+    LanguageComponent,
 
     // Components for Main Page
     MainPageComponent,

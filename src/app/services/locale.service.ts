@@ -25,9 +25,25 @@ export class LocaleService {
     return this.languageToLocale[this.getBrowserLanguageWithFallback()];
   }
 
-  setLanguage(): void {
+  setLanguage(language?: Language): void {
+    const selectedLanguage = language ?? this.getBrowserLanguageWithFallback();
+
     this.translateService.setDefaultLang(this.defaultLanguage);
-    this.translateService.use(this.getBrowserLanguageWithFallback());
+    this.translateService.use(selectedLanguage);
+  }
+
+  getCurrentLanguage(): Language {
+    const currentLanguage =
+      this.translateService.currentLang || this.translateService.defaultLang;
+
+    if (
+      currentLanguage &&
+      this.languages.includes(currentLanguage as Language)
+    ) {
+      return currentLanguage as Language;
+    }
+
+    return this.defaultLanguage;
   }
 
   private getBrowserLanguageWithFallback(): Language {
